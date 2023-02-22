@@ -11,7 +11,11 @@ namespace ManagedCodeStripping.Editor
 {
     public static class CustomLinkXmlGen
     {
-        public static string RESOURSE_ROOT_PATH = @"P:\hongen_sci\client\trunk";
+        public static string[] RESOURSE_ROOT_PATH => new string[]
+        {
+            Application.dataPath,
+            @"P:\hongen_sci\client\trunk",
+        };
 
         // 获取所有类型
         private static List<Type> AllTypes(bool exclude_generic_definition = true)
@@ -39,131 +43,6 @@ namespace ManagedCodeStripping.Editor
             }
             return allTypes;
         }
-
-        // 获取所有类型
-        private static List<Type> AllTypesLimit()
-        {
-            IEnumerable<Type> allTypes = new List<Type>();
-            {
-                string[] modlist = new string[] {
-                    "UnityEngine",
-                    "UnityEngine.CoreModule",
-                    "UnityEngine.AssetBundleModule",
-                    "UnityEngine.UI",
-                    "UnityEngine.UIModule",
-                    "UnityEngine.AudioModule",
-                    "UnityEngine.AnimationModule",
-                    "UnityEngine.DirectorModule",
-                    //"UnityEngine.Timeline",
-                    "UnityEngine.ScreenCaptureModule",
-                    "UnityEngine.AIModule",
-                    "UnityEngine.ParticleSystemModule",
-                    "UnityEngine.Physics2DModule",
-                    "UnityEngine.PhysicsModule",
-                    "UnityEngine.TextRenderingModule",
-                    "UnityEngine.TerrainModule",
-                    "UnityEngine.TerrainPhysicsModule",
-                    "UnityEngine.UnityWebRequestModule",
-                    //"UnityEngine.UnityWebRequestWWWModule",
-                    "UnityEngine.VideoModule",
-                    "Cinemachine",
-                    "Unity.Timeline",
-                    //"UnityEngine.SpriteMaskModule",
-                    //"UnityEngine.AccessibilityModule",
-                    //"UnityEngine.ClothModule",
-                    //"UnityEngine.GridModule",
-                    //"UnityEngine.IMGUIModule",
-                    //"UnityEngine.InputModule",
-                    //"UnityEngine.JSONSerializeModule",
-                    //"UnityEngine.ParticlesLegacyModule",
-                    //"UnityEngine.SharedInternalsModule",
-                    //"UnityEngine.SpriteShapeModule",
-                    //"UnityEngine.UIElementsModule",
-                    //"UnityEngine.WebModule"
-                };
-                List<Type> remains = new List<Type>();
-                foreach (string mod in modlist)
-                {
-                    Assembly assembly = Assembly.Load(mod);
-                    Type[] types = assembly.GetExportedTypes();
-                    foreach (Type t in types)
-                    {
-                        if (t.IsDefined(typeof(ObsoleteAttribute), true) ||
-                            t.IsNotPublic ||
-                            (t.IsAbstract && !t.IsSealed) ||
-                            t.FullName.StartsWith("UnityEngine.Application+Advertising") ||
-                            t.FullName.StartsWith("UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure"))
-                            continue;
-                        remains.Add(t);
-                    }
-                }
-                allTypes = allTypes.Concat(remains);
-            }
-            {
-                bool filterType(Type t)
-                {
-                    if (t.IsDefined(typeof(ObsoleteAttribute), true))
-                        return false;
-                    if (t.IsNotPublic)
-                        return false;
-                    if (t.IsAbstract)
-                        return false;
-                    if (t.IsInterface)
-                        return false;
-                    if (t.IsClass)
-                        return false;
-                    if (t.IsEnum)
-                        return false;
-                    if (t.FullName.StartsWith("UnityEngine.Experimental.") ||
-                        t.FullName.StartsWith("UnityEngine.Network.") ||
-                        t.FullName.StartsWith("UnityEngine.WSA.") ||
-                        t.FullName.StartsWith("UnityEngine.Windows.") ||
-                        t.FullName.StartsWith("UnityEngine.iOS.") ||
-                        t.FullName.StartsWith("UnityEngine.tvOS.") ||
-                        t.FullName.StartsWith("UnityEngine.LocationService") ||
-                        t.FullName.StartsWith("Unity.Collections.LowLevel"))
-                        return false;
-                    if (t.IsValueType)
-                        return true;
-                    return false;
-                }
-                List<Type> exports = new List<Type>();
-                string[] modlist = new string[] {
-                    "UnityEngine",
-                    "UnityEngine.CoreModule",
-                    "UnityEngine.AssetBundleModule",
-                    "UnityEngine.UI",
-                    "UnityEngine.UIModule",
-                    "UnityEngine.AudioModule",
-                    "UnityEngine.AnimationModule",
-                    "UnityEngine.DirectorModule",
-                    //"UnityEngine.Timeline",
-                    "UnityEngine.ScreenCaptureModule",
-                    "UnityEngine.AIModule",
-                    "UnityEngine.ParticleSystemModule",
-                    "UnityEngine.Physics2DModule",
-                    "UnityEngine.PhysicsModule",
-                    "UnityEngine.TextRenderingModule",
-                    "UnityEngine.UnityWebRequestModule",
-                    //"UnityEngine.UnityWebRequestWWWModule",
-                    "UnityEngine.VideoModule"
-                };
-
-                foreach (string mod in modlist)
-                {
-                    Assembly assembly = Assembly.Load(mod);
-                    Type[] types = assembly.GetExportedTypes();
-                    foreach (Type t in types)
-                    {
-                        if (filterType(t))
-                            exports.Add(t);
-                    }
-                }
-                allTypes.Concat(exports);
-            }
-            return allTypes.Distinct().ToList();
-        }
-
 
         // 获取可被引用的脚本类型
         private static Dictionary<string, Type> ReferencableTypes()
@@ -193,79 +72,6 @@ namespace ManagedCodeStripping.Editor
             }
         }
 
-        // 获取美术资源引用的脚本
-        private static List<string> ReferencedTypeGuids()
-        {
-            var mapGuidUsed = new Dictionary<string, string>();
-            var classIds = new Dictionary<string, string>();
-            var ScriptReferencedAssetExtensions = new HashSet<string>()
-            {
-                ".unity",                       // MonoBehaviors
-                ".prefab",                      // MonoBehaviors
-                ".controller",                  // StateMachineBehaviours
-                ".playable",
-                ".asset",
-            };
-            var pattern = @"m_Script:\s*{fileID:\s*\d+,\s*guid:\s*(?<guid>\w+),\s*type:\s*\d+}";
-            var patternU = @"!u!(?<classId>\d+)\s*&";
-            void Fill(string path)
-            {
-                var ext = Path.GetExtension(path).ToLower();
-                if (ScriptReferencedAssetExtensions.Contains(ext))
-                {
-                    var content = File.ReadAllText(path);
-                    var matches = Regex.Matches(content, pattern);
-                    foreach (Match match in matches)
-                    {
-                        var guid = match.Groups["guid"].Value;
-                        mapGuidUsed[guid] = path;
-                    }
-                    var matchesU = Regex.Matches(content, patternU);
-                    foreach (Match match in matchesU)
-                    {
-                        var classId = match.Groups["classId"].Value;
-                        classIds[classId] = path;
-                    }
-                }
-            }
-            EnumFiles(RESOURSE_ROOT_PATH, Fill);
-            EnumFiles(Application.dataPath, Fill);
-            return mapGuidUsed.Keys.ToList();
-        }
-
-        // 获取文本中可能引用脚本的标识符
-        private static HashSet<string> KeywordsInScripts()
-        {
-            var keywordsInScripts = new HashSet<string>();
-            var ScriptReferencedScriptExtension = new HashSet<string>()
-            {
-                ".lua",
-                //".cs",
-            };
-            void Fill(string path)
-            {
-                var ext = Path.GetExtension(path).ToLower();
-                if (ScriptReferencedScriptExtension.Contains(ext))
-                {
-                    using (StreamReader reader = new StreamReader(path))
-                    {
-                        string line;
-                        while ((line = reader.ReadLine()) != null)
-                        {
-                            var matches = Regex.Matches(line, @"\b[a-zA-Z_][a-zA-Z0-9_]*\b");
-                            foreach (Match match in matches)
-                            {
-                                keywordsInScripts.Add(match.Value);
-                            }
-                        }
-                    }
-                }
-            }
-            EnumFiles(RESOURSE_ROOT_PATH, Fill);
-            EnumFiles(Application.dataPath, Fill);
-            return keywordsInScripts;
-        }
-
         public static void MixFileScanning(out HashSet<string> keywordsInScripts, out List<string> mapGuidUsed, out HashSet<string> identifiedClassNames)
         {
             var keywordsInScripts_Internal = new HashSet<string>();
@@ -289,6 +95,7 @@ namespace ManagedCodeStripping.Editor
                 var ext = Path.GetExtension(path).ToLower();
                 if (ScriptReferencedScriptExtensions.Contains(ext))
                 {
+                    // 获取文本中可能引用脚本的标识符
                     var content = File.ReadAllText(path);
                     var matches = Regex.Matches(content, @"\b[a-zA-Z_][a-zA-Z0-9_]*\b");
                     foreach (Match match in matches)
@@ -298,6 +105,7 @@ namespace ManagedCodeStripping.Editor
                 }
                 else if (ScriptReferencedAssetExtensions.Contains(ext))
                 {
+                    // 获取美术资源引用的脚本
                     var content = File.ReadAllText(path);
                     var matches = Regex.Matches(content, @"m_Script:\s*{fileID:\s*\d+,\s*guid:\s*(?<guid>\w+),\s*type:\s*\d+}");
                     foreach (Match match in matches)
@@ -313,8 +121,10 @@ namespace ManagedCodeStripping.Editor
                     }
                 }
             }
-            EnumFiles(RESOURSE_ROOT_PATH, Fill);
-            EnumFiles(Application.dataPath, Fill);
+            foreach(var path in RESOURSE_ROOT_PATH)
+            {
+                EnumFiles(path, Fill);
+            }
             keywordsInScripts = keywordsInScripts_Internal;
             mapGuidUsed = mapGuidUsed_internal.Keys.ToList();
             var identifiedClasses = UnityIdentifiedClasses.Map;
@@ -325,7 +135,6 @@ namespace ManagedCodeStripping.Editor
                 {
                     identifiedClassNames.Add(className);
                 }
-                Debug.Log($"classId: {classId}");
             }
             Debug.Log($"ClassIds.Count: {classIds.Count}");
         }
@@ -360,7 +169,9 @@ namespace ManagedCodeStripping.Editor
                         if (memberType != null && !making.Contains(memberType))
                         {
                             making.Add(memberType);
-                            types.Add(memberType);
+                            var fn = memberType.FullName;
+                            if (!String.IsNullOrEmpty(fn) && !fn.Contains("&") && !fn.Contains("["))
+                                types.Add(memberType);
                         }
                     }
                 }
@@ -372,15 +183,12 @@ namespace ManagedCodeStripping.Editor
         {
             var finalList = new List<Type>();
             var allTypes = AllTypes();
-            //var allTypes = AllTypesLimit();
             Debug.Log($"AllTypes.Count: {allTypes.Count}");
             var referencableTypes = ReferencableTypes();
             Debug.Log($"ReferencableTypes.Count: {referencableTypes.Count}");
 
             MixFileScanning(out var keywordsInScripts, out var referencedTypeGuids, out var identifiedClassNames);
-            //var referencedTypeGuids = ReferencedTypeGuids();
             Debug.Log($"ReferencedTypeGuids.Count: {referencedTypeGuids.Count}");
-            //var keywordsInScripts = KeywordsInScripts();
             Debug.Log($"KeywordsInScripts.Count: {keywordsInScripts.Count}");
             Debug.Log($"IdentifiedClassNames.Count: {identifiedClassNames.Count}");
 
@@ -436,21 +244,6 @@ namespace ManagedCodeStripping.Editor
             linkXmlGenerator.AddTypes(finalList);
             linkXmlGenerator.Save("Assets/ManagedCodeStripping/link.xml");
             Debug.Log("Finish!");
-        }
-
-        [MenuItem("ManagedCodeStripping/CustomLinkXmlGenTest", false)]
-        public static void LinkXmlGenTest()
-        {
-            var allTypes = AllTypesLimit();
-            foreach (var type in allTypes)
-            {
-                if (type.Name == "Transform")
-                {
-                    
-                    Debug.Log($"Found: {type.FullName}");
-                }
-            }
-            Debug.Log($"Over");
         }
     }
 }
