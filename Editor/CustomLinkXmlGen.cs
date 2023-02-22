@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -308,7 +307,7 @@ namespace ManagedCodeStripping.Editor
                     }
                     var matchesU = Regex.Matches(content, @"!u!(?<classId>\d+)\s*&");
                     foreach (Match match in matchesU)
-                    {
+                    { 
                         var classId = match.Groups["classId"].Value;
                         classIds[classId] = path;
                     }
@@ -329,6 +328,44 @@ namespace ManagedCodeStripping.Editor
                 Debug.Log($"classId: {classId}");
             }
             Debug.Log($"ClassIds.Count: {classIds.Count}");
+        }
+
+        public static void GetMemberReturnTypes(List<Type> types)
+        {
+            var making = new HashSet<Type>(types);
+            var made = new HashSet<Type>();
+            var i = 0;
+            while (i < types.Count)
+            {
+                var type = types[i];
+                if (!made.Contains(type))
+                {
+                    made.Add(type);
+                    MemberInfo[] members = type.GetMembers(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static);
+                    foreach (MemberInfo member in members)
+                    {
+                        Type memberType = null;
+                        switch (member.MemberType)
+                        {
+                            case MemberTypes.Field:
+                                memberType = ((FieldInfo)member).FieldType;
+                                break;
+                            case MemberTypes.Method:
+                                memberType = ((MethodInfo)member).ReturnType;
+                                break;
+                            case MemberTypes.Property:
+                                memberType = ((PropertyInfo)member).PropertyType;
+                                break;
+                        }
+                        if (memberType != null && !making.Contains(memberType))
+                        {
+                            making.Add(memberType);
+                            types.Add(memberType);
+                        }
+                    }
+                }
+                ++i;
+            }
         }
 
         public static List<Type> FinalTypes()
@@ -356,9 +393,14 @@ namespace ManagedCodeStripping.Editor
                     //allTypes.Remove(type);
                 }
             }
-
+            Func<Type, bool> typeFilter = (Type t) =>
+            {
+                var ns = t.Namespace ?? "";
+                var an = t.Assembly.GetName().Name ?? "";
+                return ns.StartsWith("UnityEngine") && an != "UnityEngine.UIElementsModule" && an != "UnityEditor";
+            };
             // filter script referenced types
-            var typeNameMap = allTypes.Where(t => t.Namespace?.StartsWith("UnityEngine") ?? false).GroupBy(t => t.Name).ToDictionary(g => g.Key, g => g.ToArray());
+            var typeNameMap = allTypes.Where(typeFilter).GroupBy(t => t.Name).ToDictionary(g => g.Key, g => g.ToArray());
             var typeNames = new HashSet<string>(typeNameMap.Keys);
             foreach (string keyword in keywordsInScripts)
             {
@@ -374,6 +416,10 @@ namespace ManagedCodeStripping.Editor
                     finalList.AddRange(typeNameMap[keyword]);
                 }
             }
+
+            // special case
+            //finalList.Add(Type.GetType("UnityEngine.AsyncOperation, UnityEngine.CoreModule"));
+            GetMemberReturnTypes(finalList);
 
             // filter replicated
             var xlua = PoweredXlua.FinalTypes();

@@ -47,12 +47,13 @@ namespace ManagedCodeStripping.Editor
         [MenuItem("ManagedCodeStripping/Test/aaa", false)]
         public static void aaa()
         {
-            Generator.GetGenConfig(XLua.Utils.GetAllTypes());
-            foreach (var type in Generator.LuaCallCSharp)
-            {
-                Debug.Log(type.Name);
-            }
-            Debug.Log(Generator.LuaCallCSharp.Count);
+                //Generator.GetGenConfig(XLua.Utils.GetAllTypes());
+                //foreach (var type in Generator.LuaCallCSharp)
+                //{
+                //    Debug.Log(type.Name);
+                //}
+                //Debug.Log(Generator.LuaCallCSharp.Count);
+            Debug.Log(Type.GetType("UnityEngine.AsyncOperation, UnityEngine.CoreModule"));
         }
     }
 }

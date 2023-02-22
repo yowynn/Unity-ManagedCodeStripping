@@ -25,6 +25,171 @@
     <type fullname="LuaGlobal" preserve="all" />
     <type fullname="ReporterMessageReceiver" preserve="all" />
     <type fullname="Reporter" preserve="all" />
+    <type fullname="Spine.Atlas" preserve="all" />
+    <type fullname="Spine.AnimationStateData" preserve="all" />
+    <type fullname="Spine.SkeletonData" preserve="all" />
+    <type fullname="Spine.Unity.AtlasAssetBase[]" preserve="all" />
+    <type fullname="Spine.Animation" preserve="all" />
+    <type fullname="Spine.AnimationState" preserve="all" />
+    <type fullname="Spine.Skeleton" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonRenderer+SpriteMaskInteractionMaterials" preserve="all" />
+    <type fullname="Spine.Unity.MeshGenerator" preserve="all" />
+    <type fullname="Spine.Unity.ISkeletonComponent" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonRenderer" preserve="all" />
+    <type fullname="Spine.Unity.ISkeletonAnimation" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonUtilityBone+Mode" preserve="all" />
+    <type fullname="Spine.Bone" preserve="all" />
+    <type fullname="E7.Timeline.SpineTimelineAction" preserve="all" />
+    <type fullname="Spine.Unity.Playables.SpineAnimationStateBehaviour" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonMecanim+MecanimTranslator" preserve="all" />
+    <type fullname="Canvasmart.LayoutBehaviour" preserve="all" />
+    <type fullname="Canvasmart.LayoutMode" preserve="all" />
+    <type fullname="Canvasmart.Canvasmart+LayoutModeTag" preserve="all" />
+    <type fullname="E7.Timeline.SpineTimelineClipBehaviour" preserve="all" />
+    <type fullname="Unity2DAdapter.Runtime.GraphicOrientation" preserve="all" />
+    <type fullname="XLua.LuaEnv" preserve="all" />
+    <type fullname="Images" preserve="all" />
+    <type fullname="Spine.AtlasRegion" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.BoneData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.SlotData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.Skin, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.Skin" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.EventData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.Animation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.IkConstraintData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.TransformConstraintData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.PathConstraintData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.BoneData" preserve="all" />
+    <type fullname="Spine.SlotData" preserve="all" />
+    <type fullname="Spine.EventData" preserve="all" />
+    <type fullname="Spine.IkConstraintData" preserve="all" />
+    <type fullname="Spine.TransformConstraintData" preserve="all" />
+    <type fullname="Spine.PathConstraintData" preserve="all" />
+    <type fullname="Spine.Unity.AtlasAssetBase" preserve="all" />
+    <type fullname="Spine.Unity.AtlasAssetBase&amp;" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonDataModifierAsset" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonDataModifierAsset[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.Timeline, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.TrackEntry" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.TrackEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.Bone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.IUpdatable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.IkConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.PathConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.TransformConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.Slot" preserve="all" />
+    <type fullname="Spine.Attachment" preserve="all" />
+    <type fullname="Spine.IkConstraint" preserve="all" />
+    <type fullname="Spine.TransformConstraint" preserve="all" />
+    <type fullname="Spine.PathConstraint" preserve="all" />
+    <type fullname="Spine.Slot[]" preserve="all" />
+    <type fullname="Spine.Unity.MeshGeneratorBuffers" preserve="all" />
+    <type fullname="Spine.Unity.MeshGenerator+Settings" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonUtilityBone[]" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonUtilityConstraint" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonUtilityConstraint[]" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonMecanim+MecanimTranslator+MixMode[]" preserve="all" />
+    <type fullname="Spine.MixBlend[]" preserve="all" />
+    <type fullname="iHuman.Ams.Plugin.ResLinkAsset+Item" preserve="all" />
+    <type fullname="iHuman.Ams.Plugin.ResLinkAsset+Item[]" preserve="all" />
+    <type fullname="XLua.LuaTable" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="XLua.LuaFunction" preserve="all" />
+    <type fullname="Spine.AtlasPage" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.BoneData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.BoneData[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.SlotData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.SlotData[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.Skin, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.Skin[]" preserve="all" />
+    <type fullname="Spine.Collections.OrderedDictionary`2[[Spine.Skin+SkinEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[Spine.Attachment, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[Spine.ConstraintData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.EventData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.EventData[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.Animation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.Animation[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.IkConstraintData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.IkConstraintData[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.TransformConstraintData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.TransformConstraintData[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.PathConstraintData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.PathConstraintData[]" preserve="all" />
+    <type fullname="Spine.TransformMode" preserve="all" />
+    <type fullname="Spine.BlendMode" preserve="all" />
+    <type fullname="Spine.PositionMode" preserve="all" />
+    <type fullname="Spine.SpacingMode" preserve="all" />
+    <type fullname="Spine.RotateMode" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonDataModifierAsset&amp;" preserve="all" />
+    <type fullname="Spine.Timeline" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.Timeline, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.Timeline[]" preserve="all" />
+    <type fullname="Spine.MixBlend" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.TrackEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.TrackEntry[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.Bone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.Bone[]" preserve="all" />
+    <type fullname="Spine.IUpdatable" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.IUpdatable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.IUpdatable[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.IkConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.IkConstraint[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.PathConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.PathConstraint[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.TransformConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.TransformConstraint[]" preserve="all" />
+    <type fullname="Spine.ExposedList`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="Spine.Slot&amp;" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonUtilityBone&amp;" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonUtilityConstraint&amp;" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonMecanim+MecanimTranslator+MixMode" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonMecanim+MecanimTranslator+MixMode&amp;" preserve="all" />
+    <type fullname="Spine.MixBlend&amp;" preserve="all" />
+    <type fullname="iHuman.Ams.Plugin.ResLinkAsset+Item&amp;" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="Spine.Format" preserve="all" />
+    <type fullname="Spine.TextureFilter" preserve="all" />
+    <type fullname="Spine.TextureWrap" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="TOutput[]" preserve="all" />
+    <type fullname="Spine.BoneData&amp;" preserve="all" />
+    <type fullname="Spine.SlotData&amp;" preserve="all" />
+    <type fullname="Spine.Skin&amp;" preserve="all" />
+    <type fullname="Spine.Skin+SkinEntry" preserve="all" />
+    <type fullname="Spine.Collections.OrderedDictionary`2+KeyCollection[[Spine.Skin+SkinEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[Spine.Attachment, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.Collections.OrderedDictionary`2+ValueCollection[[Spine.Skin+SkinEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[Spine.Attachment, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ConstraintData" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[Spine.ConstraintData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="Spine.ConstraintData[]" preserve="all" />
+    <type fullname="Spine.EventData&amp;" preserve="all" />
+    <type fullname="Spine.Animation&amp;" preserve="all" />
+    <type fullname="Spine.IkConstraintData&amp;" preserve="all" />
+    <type fullname="Spine.TransformConstraintData&amp;" preserve="all" />
+    <type fullname="Spine.PathConstraintData&amp;" preserve="all" />
+    <type fullname="Spine.Timeline&amp;" preserve="all" />
+    <type fullname="Spine.TrackEntry&amp;" preserve="all" />
+    <type fullname="Spine.Bone&amp;" preserve="all" />
+    <type fullname="Spine.IUpdatable&amp;" preserve="all" />
+    <type fullname="Spine.IkConstraint&amp;" preserve="all" />
+    <type fullname="Spine.PathConstraint&amp;" preserve="all" />
+    <type fullname="Spine.TransformConstraint&amp;" preserve="all" />
+    <type fullname="Spine.ExposedList`1+Enumerator[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="Spine.ConstraintData&amp;" preserve="all" />
+    <type fullname="" preserve="all" />
   </assembly>
   <assembly fullname="NaughtyWaterBuoyancy.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="NaughtyWaterBuoyancy.WaterFX" preserve="all" />
@@ -61,6 +226,62 @@
     <type fullname="UnityEngine.UI.CanvasScaler+Unit" preserve="all" />
     <type fullname="UnityEngine.UI.LayoutRebuilder" preserve="all" />
     <type fullname="UnityEngine.UI.ContentSizeFitter+FitMode" preserve="all" />
+    <type fullname="UnityEngine.UI.GraphicRaycaster+BlockingObjects" preserve="all" />
+    <type fullname="UnityEngine.UI.CanvasScaler+ScaleMode" preserve="all" />
+    <type fullname="UnityEngine.UI.CanvasScaler+ScreenMatchMode" preserve="all" />
+    <type fullname="UnityEngine.UI.Image+FillMethod" preserve="all" />
+    <type fullname="UnityEngine.UI.MaskableGraphic+CullStateChangedEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect+MovementType" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect+ScrollbarVisibility" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect+ScrollRectEvent" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.StandaloneInputModule+InputMode" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.BaseInputModule" preserve="all" />
+    <type fullname="UnityEngine.UI.Navigation" preserve="all" />
+    <type fullname="UnityEngine.UI.ColorBlock" preserve="all" />
+    <type fullname="UnityEngine.UI.SpriteState" preserve="all" />
+    <type fullname="UnityEngine.UI.AnimationTriggers" preserve="all" />
+    <type fullname="UnityEngine.UI.Graphic" preserve="all" />
+    <type fullname="UnityEngine.UI.Selectable" preserve="all" />
+    <type fullname="UnityEngine.UI.Scrollbar+Direction" preserve="all" />
+    <type fullname="UnityEngine.UI.Scrollbar+ScrollEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.GridLayoutGroup+Corner" preserve="all" />
+    <type fullname="UnityEngine.UI.GridLayoutGroup+Axis" preserve="all" />
+    <type fullname="UnityEngine.UI.GridLayoutGroup+Constraint" preserve="all" />
+    <type fullname="UnityEngine.UI.Toggle+ToggleTransition" preserve="all" />
+    <type fullname="UnityEngine.UI.Toggle+ToggleEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.Slider+Direction" preserve="all" />
+    <type fullname="UnityEngine.UI.Slider+SliderEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField+SubmitEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField+OnChangeEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField+OnValidateInput" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField+ContentType" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField+LineType" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField+InputType" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField+CharacterValidation" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.PointerEventData+InputButton" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IPointerEnterHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IPointerExitHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IPointerDownHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IPointerUpHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IPointerClickHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IInitializePotentialDragHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IBeginDragHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IDragHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IEndDragHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IDropHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IScrollHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IUpdateSelectedHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.ISelectHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IDeselectHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.IMoveHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.ISubmitHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[[UnityEngine.EventSystems.ICancelHandler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.UI.Navigation+Mode" preserve="all" />
+    <type fullname="UnityEngine.UI.Selectable[]" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger+Entry[]" preserve="all" />
+    <type fullname="UnityEngine.UI.Selectable&amp;" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger+Entry&amp;" preserve="all" />
   </assembly>
   <assembly fullname="Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Timeline.AnimationPlayableAsset" preserve="all" />
@@ -79,6 +300,24 @@
     <type fullname="UnityEngine.Timeline.SignalReceiver" preserve="all" />
     <type fullname="UnityEngine.Timeline.PlayableTrack" preserve="all" />
     <type fullname="UnityEngine.Timeline.TimelineAsset+EditorSettings" preserve="all" />
+    <type fullname="UnityEngine.Timeline.MatchTargetFields" preserve="all" />
+    <type fullname="UnityEngine.Timeline.AnimationPlayableAsset+LoopMode" preserve="all" />
+    <type fullname="UnityEngine.Timeline.ClipCaps" preserve="all" />
+    <type fullname="UnityEngine.Timeline.NotificationFlags" preserve="all" />
+    <type fullname="UnityEngine.Timeline.TrackAsset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.TrackOffset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.TimelineClip+ClipExtrapolation" preserve="all" />
+    <type fullname="UnityEngine.Timeline.TimelineClip" preserve="all" />
+    <type fullname="UnityEngine.Timeline.IMarker" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.Timeline.TimelineAsset+DurationMode" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.Timeline.ActivationTrack+PostPlaybackState" preserve="all" />
+    <type fullname="UnityEngine.Timeline.ActivationControlPlayable+PostPlaybackState" preserve="all" />
+    <type fullname="UnityEngine.Timeline.SignalAsset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.TimelineClip+BlendCurveMode" preserve="all" />
   </assembly>
   <assembly fullname="Cinemachine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Cinemachine.CinemachineFramingTransposer" preserve="all" />
@@ -90,9 +329,52 @@
     <type fullname="Cinemachine.CinemachineTransposer" preserve="all" />
     <type fullname="Cinemachine.CinemachineComposer" preserve="all" />
     <type fullname="Cinemachine.CinemachineConfiner" preserve="all" />
+    <type fullname="Cinemachine.CinemachineCore+Stage" preserve="all" />
+    <type fullname="Cinemachine.CinemachineVirtualCameraBase" preserve="all" />
+    <type fullname="Cinemachine.ICinemachineTargetGroup" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTargetGroup" preserve="all" />
+    <type fullname="Cinemachine.CameraState" preserve="all" />
+    <type fullname="Cinemachine.CinemachineFramingTransposer+FramingMode" preserve="all" />
+    <type fullname="Cinemachine.CinemachineFramingTransposer+AdjustmentMode" preserve="all" />
+    <type fullname="Cinemachine.CinemachineComponentBase[]" preserve="all" />
+    <type fullname="Cinemachine.CinemachineComponentBase" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="Cinemachine.ICinemachineCamera" preserve="all" />
+    <type fullname="Cinemachine.AxisState+IInputAxisProvider" preserve="all" />
+    <type fullname="Cinemachine.LensSettings" preserve="all" />
+    <type fullname="Cinemachine.CinemachineVirtualCameraBase+TransitionParams" preserve="all" />
+    <type fullname="Cinemachine.CinemachineVirtualCamera+CreatePipelineDelegate" preserve="all" />
+    <type fullname="Cinemachine.CinemachineVirtualCamera+DestroyPipelineDelegate" preserve="all" />
+    <type fullname="Cinemachine.CinemachineCore+Stage[]" preserve="all" />
+    <type fullname="Cinemachine.CinemachineVirtualCameraBase+StandbyUpdateMode" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBlend" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBrain+UpdateMethod" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBrain+BrainUpdateMethod" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBlendDefinition" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBlenderSettings" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBrain+BrainEvent" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBrain+VcamActivatedEvent" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTransposer+BindingMode" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTransposer+AngularDampingMode" preserve="all" />
+    <type fullname="Cinemachine.CinemachineConfiner+Mode" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTargetGroup+PositionMode" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTargetGroup+RotationMode" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTargetGroup+UpdateMethod" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTargetGroup+Target[]" preserve="all" />
+    <type fullname="Cinemachine.CameraState+BlendHintValue" preserve="all" />
+    <type fullname="Cinemachine.CameraState+CustomBlendable" preserve="all" />
+    <type fullname="Cinemachine.CinemachineComponentBase&amp;" preserve="all" />
+    <type fullname="Cinemachine.CinemachineVirtualCameraBase+BlendHint" preserve="all" />
+    <type fullname="Cinemachine.CinemachineCore+Stage&amp;" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBlendDefinition+Style" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBlenderSettings+CustomBlend[]" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTargetGroup+Target" preserve="all" />
+    <type fullname="Cinemachine.CinemachineTargetGroup+Target&amp;" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBlenderSettings+CustomBlend" preserve="all" />
+    <type fullname="Cinemachine.CinemachineBlenderSettings+CustomBlend&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.AsyncOperation" preserve="all" />
     <type fullname="UnityEngine.WSA.Application" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
     <type fullname="UnityEngine.Screen" preserve="all" />
@@ -171,10 +453,292 @@
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.Skybox" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.U2D.Interface.Event" preserve="all" />
-    <type fullname="UnityEngine.U2D.Interface.EventSystem" preserve="all" />
+    <type fullname="UnityEngine.HideFlags" preserve="all" />
+    <type fullname="UnityEngine.Coroutine" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.Component[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="UnityEngine.Vector3[]" preserve="all" />
+    <type fullname="UnityEngine.Texture" preserve="all" />
+    <type fullname="UnityEngine.Material[]" preserve="all" />
+    <type fullname="UnityEngine.SpriteMaskInteraction" preserve="all" />
+    <type fullname="UnityEngine.Bounds" preserve="all" />
+    <type fullname="UnityEngine.RectOffset" preserve="all" />
+    <type fullname="UnityEngine.PropertyName" preserve="all" />
+    <type fullname="UnityEngine.Playables.PlayableAsset" preserve="all" />
+    <type fullname="UnityEngine.ExposedReference`1[[Cinemachine.CinemachineVirtualCameraBase, Cinemachine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.Vector2Int" preserve="all" />
+    <type fullname="UnityEngine.TouchScreenKeyboardType" preserve="all" />
+    <type fullname="UnityEngine.ExposedReference`1[[Spine.Unity.SkeletonAnimation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.ExposedReference`1[[UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.ApplicationInstallMode" preserve="all" />
+    <type fullname="UnityEngine.ApplicationSandboxType" preserve="all" />
+    <type fullname="UnityEngine.StackTraceLogType" preserve="all" />
+    <type fullname="UnityEngine.ThreadPriority" preserve="all" />
+    <type fullname="UnityEngine.AsyncOperation" preserve="all" />
+    <type fullname="UnityEngine.SystemLanguage" preserve="all" />
+    <type fullname="UnityEngine.Object[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.ResourceRequest" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.SceneManagement.Scene[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.GameObject[]" preserve="all" />
+    <type fullname="UnityEngine.Resolution" preserve="all" />
+    <type fullname="UnityEngine.Resolution[]" preserve="all" />
+    <type fullname="UnityEngine.FullScreenMode" preserve="all" />
+    <type fullname="UnityEngine.Rect[]" preserve="all" />
+    <type fullname="UnityEngine.RenderingPath" preserve="all" />
+    <type fullname="UnityEngine.Rendering.OpaqueSortMode" preserve="all" />
+    <type fullname="UnityEngine.TransparencySortMode" preserve="all" />
+    <type fullname="UnityEngine.CameraType" preserve="all" />
+    <type fullname="UnityEngine.CameraClearFlags" preserve="all" />
+    <type fullname="UnityEngine.DepthTextureMode" preserve="all" />
+    <type fullname="UnityEngine.Camera+GateFitMode" preserve="all" />
+    <type fullname="UnityEngine.StereoTargetEyeMask" preserve="all" />
+    <type fullname="UnityEngine.Camera+MonoOrStereoscopicEye" preserve="all" />
+    <type fullname="UnityEngine.Camera[]" preserve="all" />
+    <type fullname="UnityEngine.Rendering.CommandBuffer[]" preserve="all" />
+    <type fullname="UnityEngine.Matrix4x4[]" preserve="all" />
+    <type fullname="UnityEngine.Camera+CameraCallback" preserve="all" />
+    <type fullname="UnityEngine.SpriteDrawMode" preserve="all" />
+    <type fullname="UnityEngine.SpriteTileMode" preserve="all" />
+    <type fullname="UnityEngine.SpriteSortPoint" preserve="all" />
+    <type fullname="UnityEngine.Rendering.ShadowCastingMode" preserve="all" />
+    <type fullname="UnityEngine.MotionVectorGenerationMode" preserve="all" />
+    <type fullname="UnityEngine.Rendering.LightProbeUsage" preserve="all" />
+    <type fullname="UnityEngine.Rendering.ReflectionProbeUsage" preserve="all" />
+    <type fullname="UnityEngine.Experimental.Rendering.RayTracingMode" preserve="all" />
+    <type fullname="UnityEngine.ReceiveGI" preserve="all" />
+    <type fullname="UnityEngine.Playables.DirectorWrapMode" preserve="all" />
+    <type fullname="UnityEngine.Playables.PlayableGraph" preserve="all" />
+    <type fullname="UnityEngine.Playables.DirectorUpdateMode" preserve="all" />
+    <type fullname="UnityEngine.Keyframe[]" preserve="all" />
+    <type fullname="UnityEngine.WeightedMode" preserve="all" />
+    <type fullname="UnityEngine.Vector2[]" preserve="all" />
+    <type fullname="UnityEngine.SpritePackingMode" preserve="all" />
+    <type fullname="UnityEngine.SpritePackingRotation" preserve="all" />
+    <type fullname="UnityEngine.Color[]" preserve="all" />
+    <type fullname="UnityEngine.Color32[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.Experimental.Rendering.GraphicsFormat" preserve="all" />
+    <type fullname="UnityEngine.Rendering.TextureDimension" preserve="all" />
+    <type fullname="UnityEngine.TextureWrapMode" preserve="all" />
+    <type fullname="UnityEngine.FilterMode" preserve="all" />
+    <type fullname="UnityEngine.Hash128" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.Gradient" preserve="all" />
+    <type fullname="UnityEngine.LineTextureMode" preserve="all" />
+    <type fullname="UnityEngine.LineAlignment" preserve="all" />
+    <type fullname="UnityEngine.ILogger" preserve="all" />
+    <type fullname="UnityEngine.ScriptableObject" preserve="all" />
+    <type fullname="UnityEngine.LightType" preserve="all" />
+    <type fullname="UnityEngine.LightShape" preserve="all" />
+    <type fullname="UnityEngine.Flare" preserve="all" />
+    <type fullname="UnityEngine.LightBakingOutput" preserve="all" />
+    <type fullname="UnityEngine.LightShadowCasterMode" preserve="all" />
+    <type fullname="UnityEngine.LightShadows" preserve="all" />
+    <type fullname="UnityEngine.Rendering.LightShadowResolution" preserve="all" />
+    <type fullname="UnityEngine.LightRenderMode" preserve="all" />
+    <type fullname="UnityEngine.LightmapBakeType" preserve="all" />
+    <type fullname="UnityEngine.Light[]" preserve="all" />
+    <type fullname="UnityEngine.LightmappingMode" preserve="all" />
+    <type fullname="UnityEngine.VRTextureUsage" preserve="all" />
+    <type fullname="UnityEngine.RenderTextureMemoryless" preserve="all" />
+    <type fullname="UnityEngine.RenderBuffer" preserve="all" />
+    <type fullname="UnityEngine.RenderTextureDescriptor" preserve="all" />
+    <type fullname="UnityEngine.CalendarUnit" preserve="all" />
+    <type fullname="UnityEngine.CalendarIdentifier" preserve="all" />
+    <type fullname="UnityEngine.iOS.CalendarIdentifier" preserve="all" />
+    <type fullname="UnityEngine.iOS.CalendarUnit" preserve="all" />
+    <type fullname="UnityEngine.NetworkConnectionError" preserve="all" />
+    <type fullname="UnityEngine.NetworkLogLevel" preserve="all" />
+    <type fullname="UnityEngine.NetworkPlayer[]" preserve="all" />
+    <type fullname="UnityEngine.NetworkPlayer" preserve="all" />
+    <type fullname="UnityEngine.NetworkViewID" preserve="all" />
+    <type fullname="UnityEngine.NetworkPeerType" preserve="all" />
+    <type fullname="UnityEngine.ConnectionTesterStatus" preserve="all" />
+    <type fullname="UnityEngine.CrashReport[]" preserve="all" />
+    <type fullname="UnityEngine.QualityLevel" preserve="all" />
+    <type fullname="UnityEngine.ShadowQuality" preserve="all" />
+    <type fullname="UnityEngine.ShadowProjection" preserve="all" />
+    <type fullname="UnityEngine.ShadowResolution" preserve="all" />
+    <type fullname="UnityEngine.ShadowmaskMode" preserve="all" />
+    <type fullname="UnityEngine.AnisotropicFiltering" preserve="all" />
+    <type fullname="UnityEngine.Rendering.RenderPipelineAsset" preserve="all" />
+    <type fullname="UnityEngine.BlendWeights" preserve="all" />
+    <type fullname="UnityEngine.SkinWeights" preserve="all" />
+    <type fullname="UnityEngine.ColorSpace" preserve="all" />
+    <type fullname="UnityEngine.BatteryStatus" preserve="all" />
+    <type fullname="UnityEngine.OperatingSystemFamily" preserve="all" />
+    <type fullname="UnityEngine.DeviceType" preserve="all" />
+    <type fullname="UnityEngine.Rendering.GraphicsDeviceType" preserve="all" />
+    <type fullname="UnityEngine.Rendering.RenderingThreadingMode" preserve="all" />
+    <type fullname="UnityEngine.Rendering.CopyTextureSupport" preserve="all" />
+    <type fullname="UnityEngine.NPOTSupport" preserve="all" />
+    <type fullname="UnityEngine.iPhoneGeneration" preserve="all" />
+    <type fullname="UnityEngine.RangeInt" preserve="all" />
+    <type fullname="UnityEngine.Vector3Int" preserve="all" />
+    <type fullname="Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="UnityEngine.Rendering.ShaderHardwareTier" preserve="all" />
+    <type fullname="UnityEngine.Rendering.ShaderTagId" preserve="all" />
+    <type fullname="UnityEngine.Vector4[]" preserve="all" />
+    <type fullname="UnityEngine.Rendering.ShaderPropertyType" preserve="all" />
+    <type fullname="UnityEngine.Rendering.ShaderPropertyFlags" preserve="all" />
+    <type fullname="UnityEngine.MaterialGlobalIlluminationFlags" preserve="all" />
+    <type fullname="UnityEngine.FrustumPlanes" preserve="all" />
+    <type fullname="UnityEngine.Plane" preserve="all" />
+    <type fullname="UnityEngine.FogMode" preserve="all" />
+    <type fullname="UnityEngine.Rendering.AmbientMode" preserve="all" />
+    <type fullname="UnityEngine.Rendering.SphericalHarmonicsL2" preserve="all" />
+    <type fullname="UnityEngine.Cubemap" preserve="all" />
+    <type fullname="UnityEngine.Rendering.DefaultReflectionMode" preserve="all" />
+    <type fullname="UnityEngine.SkinQuality" preserve="all" />
+    <type fullname="UnityEngine.Transform[]" preserve="all" />
+    <type fullname="UnityEngine.LightmapData[]" preserve="all" />
+    <type fullname="UnityEngine.LightmapsMode" preserve="all" />
+    <type fullname="UnityEngine.LightProbes" preserve="all" />
+    <type fullname="UnityEngine.LightmapsModeLegacy" preserve="all" />
+    <type fullname="UnityEngine.Rendering.RenderPipelineAsset[]" preserve="all" />
+    <type fullname="UnityEngine.Rendering.BuiltinShaderMode" preserve="all" />
+    <type fullname="UnityEngine.Rendering.IndexFormat" preserve="all" />
+    <type fullname="UnityEngine.Rendering.VertexAttributeDescriptor" preserve="all" />
+    <type fullname="UnityEngine.Rendering.VertexAttributeFormat" preserve="all" />
+    <type fullname="Unity.Collections.NativeArray`1[[UnityEngine.BoneWeight1, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.Rendering.SubMeshDescriptor" preserve="all" />
+    <type fullname="UnityEngine.Rendering.VertexAttributeDescriptor[]" preserve="all" />
+    <type fullname="UnityEngine.BoneWeight[]" preserve="all" />
+    <type fullname="UnityEngine.MeshTopology" preserve="all" />
+    <type fullname="UnityEngine.Component&amp;" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.Vector3&amp;" preserve="all" />
+    <type fullname="UnityEngine.Material&amp;" preserve="all" />
+    <type fullname="UnityEngine.Rendering.CompareFunction" preserve="all" />
+    <type fullname="UnityEngine.Playables.PlayableHandle" preserve="all" />
+    <type fullname="UnityEngine.BoundingSphere" preserve="all" />
+    <type fullname="UnityEngine.Object&amp;" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.SceneManagement.Scene&amp;" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.GameObject&amp;" preserve="all" />
+    <type fullname="UnityEngine.Resolution&amp;" preserve="all" />
+    <type fullname="UnityEngine.Rect&amp;" preserve="all" />
+    <type fullname="UnityEngine.Camera&amp;" preserve="all" />
+    <type fullname="UnityEngine.Rendering.CommandBuffer" preserve="all" />
+    <type fullname="UnityEngine.Rendering.CommandBuffer&amp;" preserve="all" />
+    <type fullname="UnityEngine.Matrix4x4&amp;" preserve="all" />
+    <type fullname="UnityEngine.Playables.PlayableOutput" preserve="all" />
+    <type fullname="UnityEngine.IExposedPropertyTable" preserve="all" />
+    <type fullname="UnityEngine.Keyframe&amp;" preserve="all" />
+    <type fullname="UnityEngine.Vector2&amp;" preserve="all" />
+    <type fullname="UnityEngine.Color&amp;" preserve="all" />
+    <type fullname="UnityEngine.Color32&amp;" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="Unity.Jobs.JobHandle" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.GradientColorKey[]" preserve="all" />
+    <type fullname="UnityEngine.GradientAlphaKey[]" preserve="all" />
+    <type fullname="UnityEngine.GradientMode" preserve="all" />
+    <type fullname="UnityEngine.ILogHandler" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.MixedLightingMode" preserve="all" />
+    <type fullname="UnityEngine.Light&amp;" preserve="all" />
+    <type fullname="UnityEngine.Rendering.ShadowSamplingMode" preserve="all" />
+    <type fullname="UnityEngine.RenderTextureCreationFlags" preserve="all" />
+    <type fullname="UnityEngine.NetworkPlayer&amp;" preserve="all" />
+    <type fullname="UnityEngine.CrashReport&amp;" preserve="all" />
+    <type fullname="UnityEngine.Texture2D[]" preserve="all" />
+    <type fullname="Unity.Collections.NativeArray`1+Enumerator[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="UnityEngine.Vector4&amp;" preserve="all" />
+    <type fullname="UnityEngine.Transform&amp;" preserve="all" />
+    <type fullname="UnityEngine.LightmapData" preserve="all" />
+    <type fullname="UnityEngine.LightmapData&amp;" preserve="all" />
+    <type fullname="UnityEngine.Rendering.SphericalHarmonicsL2[]" preserve="all" />
+    <type fullname="UnityEngine.Rendering.RenderPipelineAsset&amp;" preserve="all" />
+    <type fullname="UnityEngine.Rendering.VertexAttribute" preserve="all" />
+    <type fullname="UnityEngine.BoneWeight1" preserve="all" />
+    <type fullname="UnityEngine.BoneWeight1[]" preserve="all" />
+    <type fullname="Unity.Collections.NativeArray`1+Enumerator[[UnityEngine.BoneWeight1, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="UnityEngine.Rendering.VertexAttributeDescriptor&amp;" preserve="all" />
+    <type fullname="UnityEngine.BoneWeight" preserve="all" />
+    <type fullname="UnityEngine.BoneWeight&amp;" preserve="all" />
+    <type fullname="UnityEngine.Playables.PlayableBinding" preserve="all" />
+    <type fullname="UnityEngine.Rendering.GraphicsFence" preserve="all" />
+    <type fullname="UnityEngine.Rendering.GPUFence" preserve="all" />
+    <type fullname="UnityEngine.Texture3D" preserve="all" />
+    <type fullname="UnityEngine.Playables.PlayableOutputHandle" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="U[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="U[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.GradientColorKey" preserve="all" />
+    <type fullname="UnityEngine.GradientColorKey&amp;" preserve="all" />
+    <type fullname="UnityEngine.GradientAlphaKey" preserve="all" />
+    <type fullname="UnityEngine.GradientAlphaKey&amp;" preserve="all" />
+    <type fullname="UnityEngine.SendMessageOptions" preserve="all" />
+    <type fullname="UnityEngine.Texture2D&amp;" preserve="all" />
+    <type fullname="UnityEngine.Rendering.SphericalHarmonicsL2&amp;" preserve="all" />
+    <type fullname="UnityEngine.BoneWeight1&amp;" preserve="all" />
+    <type fullname="UnityEngine.Playables.DataStreamType" preserve="all" />
+    <type fullname="UnityEngine.Playables.PlayableBinding[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.Playables.PlayableBinding&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.BoxCollider" preserve="all" />
@@ -182,6 +746,14 @@
     <type fullname="UnityEngine.SphereCollider" preserve="all" />
     <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
     <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.PhysicMaterial" preserve="all" />
+    <type fullname="UnityEngine.RigidbodyConstraints" preserve="all" />
+    <type fullname="UnityEngine.CollisionDetectionMode" preserve="all" />
+    <type fullname="UnityEngine.RigidbodyInterpolation" preserve="all" />
+    <type fullname="UnityEngine.RaycastHit[]" preserve="all" />
+    <type fullname="UnityEngine.MeshColliderCookingOptions" preserve="all" />
+    <type fullname="UnityEngine.PhysicMaterialCombine" preserve="all" />
+    <type fullname="UnityEngine.RaycastHit&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationState" preserve="all" />
@@ -190,38 +762,58 @@
     <type fullname="UnityEngine.PlayMode" preserve="all" />
     <type fullname="UnityEngine.Avatar" preserve="all" />
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+    <type fullname="UnityEngine.AvatarMask" preserve="all" />
+    <type fullname="UnityEngine.AnimationBlendMode" preserve="all" />
+    <type fullname="UnityEngine.AnimationCullingType" preserve="all" />
+    <type fullname="UnityEngine.AnimationInfo[]" preserve="all" />
+    <type fullname="UnityEngine.AnimatorUpdateMode" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="UnityEngine.StateMachineBehaviour[]" preserve="all" />
+    <type fullname="UnityEngine.AnimatorTransitionInfo" preserve="all" />
+    <type fullname="UnityEngine.AnimatorClipInfo[]" preserve="all" />
+    <type fullname="UnityEngine.AnimatorControllerParameter[]" preserve="all" />
+    <type fullname="UnityEngine.AnimatorControllerParameter" preserve="all" />
+    <type fullname="UnityEngine.AnimatorCullingMode" preserve="all" />
+    <type fullname="UnityEngine.AnimatorRecorderMode" preserve="all" />
+    <type fullname="UnityEngine.HumanDescription" preserve="all" />
+    <type fullname="UnityEngine.AnimationEvent[]" preserve="all" />
+    <type fullname="UnityEngine.AnimationClip[]" preserve="all" />
+    <type fullname="UnityEngine.AnimationInfo" preserve="all" />
+    <type fullname="UnityEngine.AnimationInfo&amp;" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.StateMachineBehaviour" preserve="all" />
+    <type fullname="UnityEngine.StateMachineBehaviour&amp;" preserve="all" />
+    <type fullname="UnityEngine.DurationUnit" preserve="all" />
+    <type fullname="UnityEngine.AnimatorClipInfo" preserve="all" />
+    <type fullname="UnityEngine.AnimatorClipInfo&amp;" preserve="all" />
+    <type fullname="UnityEngine.AnimatorControllerParameter&amp;" preserve="all" />
+    <type fullname="UnityEngine.AnimatorControllerParameterType" preserve="all" />
+    <type fullname="UnityEngine.HumanBone[]" preserve="all" />
+    <type fullname="UnityEngine.SkeletonBone[]" preserve="all" />
+    <type fullname="UnityEngine.AnimationEvent&amp;" preserve="all" />
+    <type fullname="UnityEngine.AnimationClip&amp;" preserve="all" />
+    <type fullname="UnityEngine.HumanBone" preserve="all" />
+    <type fullname="UnityEngine.HumanBone&amp;" preserve="all" />
+    <type fullname="UnityEngine.SkeletonBone" preserve="all" />
+    <type fullname="UnityEngine.SkeletonBone&amp;" preserve="all" />
+    <type fullname="UnityEngine.HumanLimit" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.GUILayoutOption+Type" preserve="all" />
     <type fullname="UnityEngine.GUI" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.UIElements.PropagationPaths+Type" preserve="all" />
-    <type fullname="UnityEngine.UIElements.BaseVisualTreeHierarchyTrackerUpdater+State" preserve="all" />
-    <type fullname="UnityEngine.UIElements.UIR.State" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Image" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Experimental.Lerp" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Length" preserve="all" />
-    <type fullname="UnityEngine.UIElements.UxmlAttributeDescription+Use" preserve="all" />
-    <type fullname="UnityEngine.UIElements.UIR.Implementation.UIRStylePainter+Entry" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Background" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Button" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Position" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Slider" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Panel" preserve="all" />
-    <type fullname="UnityEngine.UIElements.StyleVariableResolver+Result" preserve="all" />
-    <type fullname="UnityEngine.UIElements.ScrollView" preserve="all" />
-    <type fullname="UnityEngine.UIElements.UIR.BitmapAllocator32+Page" preserve="all" />
-    <type fullname="UnityEngine.UIElements.UIR.Page" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Toggle" preserve="all" />
-    <type fullname="UnityEngine.UIElements.StyleSheets.Dimension+Unit" preserve="all" />
-    <type fullname="UnityEngine.UIElements.UIR.Utility" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Box" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Label" preserve="all" />
-    <type fullname="UnityEngine.UIElements.DropdownMenuAction+Status" preserve="all" />
-    <type fullname="UnityEngine.Yoga.Native" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Overflow" preserve="all" />
-    <type fullname="UnityEngine.UIElements.StyleSheets.Syntax.Expression" preserve="all" />
+    <type fullname="UnityEngine.EventType" preserve="all" />
+    <type fullname="UnityEngine.PointerType" preserve="all" />
+    <type fullname="UnityEngine.EventModifiers" preserve="all" />
+    <type fullname="UnityEngine.GUISkin" preserve="all" />
+    <type fullname="UnityEngine.GUIStyle" preserve="all" />
+    <type fullname="UnityEngine.GUIStyle[]" preserve="all" />
+    <type fullname="UnityEngine.GUISettings" preserve="all" />
+    <type fullname="UnityEngine.ImagePosition" preserve="all" />
+    <type fullname="UnityEngine.TextClipping" preserve="all" />
+    <type fullname="UnityEngine.GUIStyleState" preserve="all" />
+    <type fullname="UnityEngine.GUIStyle&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.VRModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Experimental.XR.Boundary+Type" preserve="all" />
@@ -231,6 +823,8 @@
     <type fullname="UnityEngine.RectTransformUtility" preserve="all" />
     <type fullname="UnityEngine.CanvasGroup" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+    <type fullname="UnityEngine.RenderMode" preserve="all" />
+    <type fullname="UnityEngine.AdditionalCanvasShaderChannels" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Playables.PlayableDirector" preserve="all" />
@@ -239,6 +833,19 @@
     <type fullname="UnityEngine.SocialPlatforms.Range" preserve="all" />
     <type fullname="UnityEngine.SocialPlatforms.Impl.Score" preserve="all" />
     <type fullname="UnityEngine.Social" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.ISocialPlatform" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.ILocalUser" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.ILeaderboard" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.IAchievement" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.IUserProfile[]" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.UserScope" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.TimeScope" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.IScore" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.IScore[]" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.IUserProfile" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.IUserProfile&amp;" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.IScore&amp;" preserve="all" />
+    <type fullname="UnityEngine.SocialPlatforms.UserState" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Collider2D" preserve="all" />
@@ -251,6 +858,22 @@
     <type fullname="UnityEngine.CircleCollider2D" preserve="all" />
     <type fullname="UnityEngine.EdgeCollider2D" preserve="all" />
     <type fullname="UnityEngine.CapsuleCollider2D" preserve="all" />
+    <type fullname="UnityEngine.PhysicsMaterial2D" preserve="all" />
+    <type fullname="UnityEngine.RigidbodyConstraints2D" preserve="all" />
+    <type fullname="UnityEngine.RigidbodyInterpolation2D" preserve="all" />
+    <type fullname="UnityEngine.RigidbodySleepMode2D" preserve="all" />
+    <type fullname="UnityEngine.CollisionDetectionMode2D" preserve="all" />
+    <type fullname="UnityEngine.ColliderDistance2D" preserve="all" />
+    <type fullname="UnityEngine.CompositeCollider2D" preserve="all" />
+    <type fullname="UnityEngine.PhysicsScene2D" preserve="all" />
+    <type fullname="UnityEngine.PhysicsJobOptions2D" preserve="all" />
+    <type fullname="UnityEngine.RaycastHit2D[]" preserve="all" />
+    <type fullname="UnityEngine.Collider2D[]" preserve="all" />
+    <type fullname="UnityEngine.CapsuleDirection2D" preserve="all" />
+    <type fullname="UnityEngine.CompositeCollider2D+GeometryType" preserve="all" />
+    <type fullname="UnityEngine.CompositeCollider2D+GenerationType" preserve="all" />
+    <type fullname="UnityEngine.RaycastHit2D&amp;" preserve="all" />
+    <type fullname="UnityEngine.Collider2D&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ParticleSystem+PlaybackState+Force" preserve="all" />
@@ -258,6 +881,72 @@
     <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
     <type fullname="UnityEngine.ParticleSystem+MinMaxGradient" preserve="all" />
     <type fullname="UnityEngine.ParticleSystem+MinMaxCurve" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemSimulationSpace" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemScalingMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+PlaybackState" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+Trails" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+MainModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+EmissionModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+ShapeModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+VelocityOverLifetimeModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+LimitVelocityOverLifetimeModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+InheritVelocityModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+ForceOverLifetimeModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+ColorOverLifetimeModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+ColorBySpeedModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+SizeOverLifetimeModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+SizeBySpeedModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+RotationOverLifetimeModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+RotationBySpeedModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+ExternalForcesModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+NoiseModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+CollisionModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+TriggerModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+SubEmittersModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+TextureSheetAnimationModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+LightsModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+TrailModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+CustomDataModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+PlaybackState+Seed4" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemVertexStreams" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderSpace" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemSortMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemGradientMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem[]" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemEmitterVelocityMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemStopAction" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRingBufferMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemCullingMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemEmissionType" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+Burst" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemShapeType" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemShapeMultiModeValue" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemMeshShapeType" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemShapeTextureChannel" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemInheritVelocityMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemGameObjectFilter" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemForceField" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemNoiseQuality" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemCollisionType" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemCollisionMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemCollisionQuality" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemOverlapAction" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemSubEmitterType" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemSubEmitterProperties" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemAnimationMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemAnimationTimeMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemAnimationType" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemAnimationRowMode" preserve="all" />
+    <type fullname="UnityEngine.Rendering.UVChannelFlags" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemTrailMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemTrailTextureMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemCustomDataMode" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem+PlaybackState+Seed" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem&amp;" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemForceFieldShape" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemForceField[]" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemForceField&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.XRModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.XR.Hand" preserve="all" />
@@ -266,6 +955,46 @@
     <type fullname="UnityEngine.TextCore.Character" preserve="all" />
     <type fullname="UnityEngine.TextCore.TextGenerator" preserve="all" />
     <type fullname="UnityEngine.TextCore.TextGenerationSettings" preserve="all" />
+    <type fullname="UnityEngine.TextCore.TextElementType" preserve="all" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontAsset" preserve="all" />
+    <type fullname="UnityEngine.TextCore.TextSpriteAsset" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontStyles" preserve="all" />
+    <type fullname="UnityEngine.TextCore.TextAlignment" preserve="all" />
+    <type fullname="UnityEngine.TextCore.TextOverflowMode" preserve="all" />
+    <type fullname="UnityEngine.TextCore.TextGradientPreset" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontWeight" preserve="all" />
+    <type fullname="UnityEngine.TextCore.TextureMapping" preserve="all" />
+    <type fullname="UnityEngine.TextCore.VertexSortingOrder" preserve="all" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="all" />
+    <type fullname="UnityEngine.TextCore.GlyphRect" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FaceInfo" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontAsset+AtlasPopulationMode" preserve="all" />
+    <type fullname="UnityEngine.TextCore.LowLevel.GlyphRenderMode" preserve="all" />
+    <type fullname="UnityEngine.TextCore.KerningTable" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontAssetCreationSettings" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontWeights[]" preserve="all" />
+    <type fullname="UnityEngine.TextCore.ColorMode" preserve="all" />
+    <type fullname="UnityEngine.TextCore.Glyph[]" preserve="all" />
+    <type fullname="UnityEngine.TextCore.Character[]" preserve="all" />
+    <type fullname="UnityEngine.TextCore.KerningPair" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontAsset[]" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontWeights" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontWeights&amp;" preserve="all" />
+    <type fullname="UnityEngine.TextCore.SpriteCharacter" preserve="all" />
+    <type fullname="UnityEngine.TextCore.SpriteCharacter[]" preserve="all" />
+    <type fullname="UnityEngine.TextCore.SpriteGlyph" preserve="all" />
+    <type fullname="UnityEngine.TextCore.SpriteGlyph[]" preserve="all" />
+    <type fullname="UnityEngine.TextCore.TextSpriteAsset[]" preserve="all" />
+    <type fullname="UnityEngine.TextCore.Glyph&amp;" preserve="all" />
+    <type fullname="UnityEngine.TextCore.Character&amp;" preserve="all" />
+    <type fullname="UnityEngine.TextCore.KerningPair[]" preserve="all" />
+    <type fullname="UnityEngine.TextCore.LowLevel.GlyphValueRecord" preserve="all" />
+    <type fullname="UnityEngine.TextCore.FontAsset&amp;" preserve="all" />
+    <type fullname="UnityEngine.TextCore.SpriteCharacter&amp;" preserve="all" />
+    <type fullname="UnityEngine.TextCore.SpriteGlyph&amp;" preserve="all" />
+    <type fullname="UnityEngine.TextCore.TextSpriteAsset&amp;" preserve="all" />
+    <type fullname="UnityEngine.TextCore.KerningPair&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Tree" preserve="all" />
@@ -280,6 +1009,11 @@
     <type fullname="UnityEngine.Video.VideoSource" preserve="all" />
     <type fullname="UnityEngine.Video.VideoClip" preserve="all" />
     <type fullname="UnityEngine.Video.VideoRenderMode" preserve="all" />
+    <type fullname="UnityEngine.Video.VideoAspectRatio" preserve="all" />
+    <type fullname="UnityEngine.Video.Video3DLayout" preserve="all" />
+    <type fullname="UnityEngine.Video.VideoTimeSource" preserve="all" />
+    <type fullname="UnityEngine.Video.VideoTimeReference" preserve="all" />
+    <type fullname="UnityEngine.Video.VideoAudioOutputMode" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.TextAnchor" preserve="all" />
@@ -287,6 +1021,21 @@
     <type fullname="UnityEngine.TextGenerationSettings" preserve="all" />
     <type fullname="UnityEngine.VerticalWrapMode" preserve="all" />
     <type fullname="UnityEngine.Font" preserve="all" />
+    <type fullname="UnityEngine.HorizontalWrapMode" preserve="all" />
+    <type fullname="UnityEngine.FontStyle" preserve="all" />
+    <type fullname="UnityEngine.UIVertex[]" preserve="all" />
+    <type fullname="UnityEngine.UICharInfo[]" preserve="all" />
+    <type fullname="UnityEngine.UILineInfo[]" preserve="all" />
+    <type fullname="UnityEngine.CharacterInfo[]" preserve="all" />
+    <type fullname="UnityEngine.Font+FontTextureRebuildCallback" preserve="all" />
+    <type fullname="UnityEngine.UIVertex" preserve="all" />
+    <type fullname="UnityEngine.UICharInfo" preserve="all" />
+    <type fullname="UnityEngine.UILineInfo" preserve="all" />
+    <type fullname="UnityEngine.UIVertex&amp;" preserve="all" />
+    <type fullname="UnityEngine.UICharInfo&amp;" preserve="all" />
+    <type fullname="UnityEngine.UILineInfo&amp;" preserve="all" />
+    <type fullname="UnityEngine.CharacterInfo" preserve="all" />
+    <type fullname="UnityEngine.CharacterInfo&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.LocalNotification" preserve="all" />
@@ -299,18 +1048,38 @@
     <type fullname="UnityEngine.WWWForm" preserve="all" />
     <type fullname="UnityEngine.Networking.DownloadHandlerBuffer" preserve="all" />
     <type fullname="UnityEngine.Networking.DownloadHandlerFile" preserve="all" />
+    <type fullname="UnityEngine.Networking.UnityWebRequestAsyncOperation" preserve="all" />
+    <type fullname="UnityEngine.Networking.UploadHandler" preserve="all" />
+    <type fullname="UnityEngine.Networking.DownloadHandler" preserve="all" />
+    <type fullname="UnityEngine.Networking.CertificateHandler" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Networking.Match.Request" preserve="all" />
     <type fullname="UnityEngine.Networking.Match.Response" preserve="all" />
     <type fullname="UnityEngine.Networking.Utility" preserve="all" />
+    <type fullname="UnityEngine.Networking.Types.SourceID" preserve="all" />
+    <type fullname="UnityEngine.Networking.Types.AppID" preserve="all" />
+    <type fullname="UnityEngine.Networking.Types.NetworkAccessToken" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AudioListener" preserve="all" />
     <type fullname="UnityEngine.AudioSettings+Mobile" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixerGroup" preserve="all" />
+    <type fullname="UnityEngine.AudioVelocityUpdateMode" preserve="all" />
+    <type fullname="UnityEngine.AudioRolloffMode" preserve="all" />
+    <type fullname="UnityEngine.AudioClipLoadType" preserve="all" />
+    <type fullname="UnityEngine.AudioDataLoadState" preserve="all" />
+    <type fullname="UnityEngine.MovieTexture" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixer" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixerSnapshot" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixerGroup[]" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixerUpdateMode" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixerGroup&amp;" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.GridModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Grid" preserve="all" />
+    <type fullname="UnityEngine.GridLayout+CellLayout" preserve="all" />
+    <type fullname="UnityEngine.GridLayout+CellSwizzle" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ImageConversion" preserve="all" />
@@ -327,5 +1096,851 @@
   <assembly fullname="UnityEngine.VFXModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Experimental.VFX.VFXManager" preserve="all" />
     <type fullname="UnityEngine.VFX.VFXManager" preserve="all" />
+    <type fullname="UnityEngine.VFX.VisualEffect[]" preserve="all" />
+    <type fullname="UnityEngine.VFX.VFXCameraBufferTypes" preserve="all" />
+    <type fullname="UnityEngine.VFX.VisualEffect" preserve="all" />
+    <type fullname="UnityEngine.VFX.VisualEffect&amp;" preserve="all" />
+    <type fullname="UnityEngine.VFX.VisualEffectAsset" preserve="all" />
+    <type fullname="UnityEngine.VFX.VFXEventAttribute" preserve="all" />
+  </assembly>
+  <assembly fullname="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <type fullname="System.Void" preserve="all" />
+    <type fullname="System.Int32" preserve="all" />
+    <type fullname="System.Boolean" preserve="all" />
+    <type fullname="System.String" preserve="all" />
+    <type fullname="System.Single" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[Spine.Unity.SkeletonDataModifierAsset, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.String[]" preserve="all" />
+    <type fullname="System.Single[]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[Spine.Unity.SkeletonUtilityBone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[Spine.Unity.SkeletonUtilityConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Double" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[UnityEngine.Playables.PlayableBinding, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[UnityEngine.Timeline.TimelineClip, Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[UnityEngine.Timeline.TrackAsset, Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[UnityEngine.Timeline.IMarker, Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[UnityEngine.UI.Toggle, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Char" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[iHuman.Ams.Plugin.ResLinkAsset+Item, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.UInt32" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[UnityEngine.Timeline.SignalAsset, Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[UnityEngine.AssetBundle, UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.TypeCode" preserve="all" />
+    <type fullname="System.UInt64" preserve="all" />
+    <type fullname="System.UInt16" preserve="all" />
+    <type fullname="System.UInt16[]" preserve="all" />
+    <type fullname="System.Byte[]" preserve="all" />
+    <type fullname="System.IntPtr" preserve="all" />
+    <type fullname="System.Int64" preserve="all" />
+    <type fullname="System.Collections.IDictionary" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.UInt16*" preserve="all" />
+    <type fullname="System.UInt32*" preserve="all" />
+    <type fullname="System.UInt64*" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1[[UnityEngine.UICharInfo, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1[[UnityEngine.UILineInfo, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Int32[]" preserve="all" />
+    <type fullname="System.Char[]" preserve="all" />
+    <type fullname="System.CharEnumerator" preserve="all" />
+    <type fullname="System.Reflection.MemberTypes" preserve="all" />
+    <type fullname="System.Reflection.MethodBase" preserve="all" />
+    <type fullname="System.Runtime.InteropServices.StructLayoutAttribute" preserve="all" />
+    <type fullname="System.Guid" preserve="all" />
+    <type fullname="System.Reflection.Binder" preserve="all" />
+    <type fullname="System.Reflection.Module" preserve="all" />
+    <type fullname="System.Reflection.Assembly" preserve="all" />
+    <type fullname="System.RuntimeTypeHandle" preserve="all" />
+    <type fullname="System.Reflection.ConstructorInfo" preserve="all" />
+    <type fullname="System.Reflection.ConstructorInfo[]" preserve="all" />
+    <type fullname="System.Reflection.MethodInfo" preserve="all" />
+    <type fullname="System.Reflection.MethodInfo[]" preserve="all" />
+    <type fullname="System.Reflection.FieldInfo" preserve="all" />
+    <type fullname="System.Reflection.FieldInfo[]" preserve="all" />
+    <type fullname="System.Type[]" preserve="all" />
+    <type fullname="System.Reflection.EventInfo" preserve="all" />
+    <type fullname="System.Reflection.EventInfo[]" preserve="all" />
+    <type fullname="System.Reflection.PropertyInfo" preserve="all" />
+    <type fullname="System.Reflection.PropertyInfo[]" preserve="all" />
+    <type fullname="System.Reflection.MemberInfo[]" preserve="all" />
+    <type fullname="System.Reflection.TypeAttributes" preserve="all" />
+    <type fullname="System.Reflection.GenericParameterAttributes" preserve="all" />
+    <type fullname="System.Reflection.InterfaceMapping" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.CustomAttributeData, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Object[]" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1[[System.Reflection.CustomAttributeData, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Reflection.MemberFilter" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[Spine.AtlasRegion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[Spine.Unity.SkeletonDataModifierAsset, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[Spine.Unity.SkeletonDataModifierAsset, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.String&amp;" preserve="all" />
+    <type fullname="System.Single&amp;" preserve="all" />
+    <type fullname="System.Collections.Generic.IEqualityComparer`1[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+Enumerator[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEqualityComparer`1[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+Enumerator[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[Spine.Unity.SkeletonUtilityBone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[Spine.Unity.SkeletonUtilityBone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[Spine.Unity.SkeletonUtilityConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[Spine.Unity.SkeletonUtilityConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.UI.Selectable, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Boolean[]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.Playables.PlayableBinding, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Int16" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.Timeline.TimelineClip, Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.Timeline.TrackAsset, Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.Timeline.IMarker, Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.EventSystems.EventTrigger+Entry, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.EventSystems.EventTrigger+Entry, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.IAsyncResult" preserve="all" />
+    <type fullname="System.Delegate[]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.UI.Toggle, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Globalization.UnicodeCategory" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[iHuman.Ams.Plugin.ResLinkAsset+Item, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[iHuman.Ams.Plugin.ResLinkAsset+Item, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.Timeline.SignalAsset, Unity.Timeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.AssetBundle, UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.UInt16&amp;" preserve="all" />
+    <type fullname="System.Byte" preserve="all" />
+    <type fullname="System.Byte&amp;" preserve="all" />
+    <type fullname="System.Void*" preserve="all" />
+    <type fullname="System.DayOfWeek" preserve="all" />
+    <type fullname="System.DateTimeKind" preserve="all" />
+    <type fullname="System.Collections.ICollection" preserve="all" />
+    <type fullname="System.Collections.IDictionaryEnumerator" preserve="all" />
+    <type fullname="System.Collections.Generic.IEqualityComparer`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+Enumerator[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.TextCore.FontAsset, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.TextCore.SpriteCharacter, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.TextCore.SpriteGlyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.TextCore.TextSpriteAsset, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Int32&amp;" preserve="all" />
+    <type fullname="System.Char&amp;" preserve="all" />
+    <type fullname="System.Reflection.ParameterInfo[]" preserve="all" />
+    <type fullname="System.Reflection.MethodImplAttributes" preserve="all" />
+    <type fullname="System.RuntimeMethodHandle" preserve="all" />
+    <type fullname="System.Reflection.MethodAttributes" preserve="all" />
+    <type fullname="System.Reflection.CallingConventions" preserve="all" />
+    <type fullname="System.Reflection.MethodBody" preserve="all" />
+    <type fullname="System.Runtime.InteropServices.LayoutKind" preserve="all" />
+    <type fullname="System.Runtime.InteropServices.CharSet" preserve="all" />
+    <type fullname="System.ModuleHandle" preserve="all" />
+    <type fullname="System.Reflection.MemberInfo" preserve="all" />
+    <type fullname="System.Security.Cryptography.X509Certificates.X509Certificate" preserve="all" />
+    <type fullname="System.Reflection.TypeFilter" preserve="all" />
+    <type fullname="System.Security.Policy.Evidence" preserve="all" />
+    <type fullname="System.IO.FileStream[]" preserve="all" />
+    <type fullname="System.IO.FileStream" preserve="all" />
+    <type fullname="System.IO.Stream" preserve="all" />
+    <type fullname="System.Reflection.AssemblyName" preserve="all" />
+    <type fullname="System.Reflection.Module[]" preserve="all" />
+    <type fullname="System.Reflection.ManifestResourceInfo" preserve="all" />
+    <type fullname="System.Security.PermissionSet" preserve="all" />
+    <type fullname="System.Security.SecurityRuleSet" preserve="all" />
+    <type fullname="System.Reflection.AssemblyName[]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.TypeInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.Module, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Reflection.ConstructorInfo&amp;" preserve="all" />
+    <type fullname="System.Reflection.ParameterInfo" preserve="all" />
+    <type fullname="System.Reflection.ICustomAttributeProvider" preserve="all" />
+    <type fullname="System.Delegate" preserve="all" />
+    <type fullname="System.Reflection.MethodInfo&amp;" preserve="all" />
+    <type fullname="System.Reflection.FieldAttributes" preserve="all" />
+    <type fullname="System.RuntimeFieldHandle" preserve="all" />
+    <type fullname="System.Reflection.FieldInfo&amp;" preserve="all" />
+    <type fullname="System.Type&amp;" preserve="all" />
+    <type fullname="System.Reflection.EventAttributes" preserve="all" />
+    <type fullname="System.Reflection.EventInfo&amp;" preserve="all" />
+    <type fullname="System.Reflection.PropertyAttributes" preserve="all" />
+    <type fullname="System.Reflection.PropertyInfo&amp;" preserve="all" />
+    <type fullname="System.Reflection.MemberInfo&amp;" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="TOutput[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.CustomAttributeData, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Object&amp;" preserve="all" />
+    <type fullname="System.Reflection.CustomAttributeData" preserve="all" />
+    <type fullname="System.Collections.Generic.ICollection`1[[Spine.Skin+SkinEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[Spine.Unity.SkeletonDataModifierAsset, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="TOutput[]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection+Enumerator[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection+Enumerator[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[Spine.Slot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[Spine.Unity.SkeletonUtilityBone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[Spine.Unity.SkeletonUtilityConstraint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.UI.Selectable, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.UI.Selectable, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Boolean&amp;" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.EventSystems.EventTrigger+Entry, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Threading.WaitHandle" preserve="all" />
+    <type fullname="System.Delegate&amp;" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[iHuman.Ams.Plugin.ResLinkAsset+Item, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Collections.DictionaryEntry" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection+Enumerator[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEqualityComparer`1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+Enumerator[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+Enumerator[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1[[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEqualityComparer`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+Enumerator[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.TextCore.FontAsset, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.TextCore.FontAsset, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.TextCore.SpriteCharacter, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.TextCore.SpriteCharacter, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.TextCore.SpriteGlyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.TextCore.SpriteGlyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.TextCore.TextSpriteAsset, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.TextCore.TextSpriteAsset, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Reflection.ParameterInfo&amp;" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1[[System.Reflection.ExceptionHandlingClause, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1[[System.Reflection.LocalVariableInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.IO.FileStream&amp;" preserve="all" />
+    <type fullname="Microsoft.Win32.SafeHandles.SafeFileHandle" preserve="all" />
+    <type fullname="System.Security.AccessControl.FileSecurity" preserve="all" />
+    <type fullname="System.Threading.Tasks.Task" preserve="all" />
+    <type fullname="System.Threading.Tasks.Task`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Threading.Tasks.ValueTask`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.Remoting.ObjRef" preserve="all" />
+    <type fullname="System.Reflection.ProcessorArchitecture" preserve="all" />
+    <type fullname="System.Globalization.CultureInfo" preserve="all" />
+    <type fullname="System.Reflection.AssemblyNameFlags" preserve="all" />
+    <type fullname="System.Configuration.Assemblies.AssemblyHashAlgorithm" preserve="all" />
+    <type fullname="System.Reflection.StrongNameKeyPair" preserve="all" />
+    <type fullname="System.Version" preserve="all" />
+    <type fullname="System.Configuration.Assemblies.AssemblyVersionCompatibility" preserve="all" />
+    <type fullname="System.Reflection.AssemblyContentType" preserve="all" />
+    <type fullname="System.Reflection.Module&amp;" preserve="all" />
+    <type fullname="System.Reflection.ResourceLocation" preserve="all" />
+    <type fullname="System.Security.IPermission" preserve="all" />
+    <type fullname="System.Security.SecurityElement" preserve="all" />
+    <type fullname="System.Reflection.AssemblyName&amp;" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.TypeInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.Module, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Reflection.ParameterAttributes" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1[[System.Reflection.CustomAttributeTypedArgument, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1[[System.Reflection.CustomAttributeNamedArgument, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEqualityComparer`1[[Spine.Skin+SkinEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Collections.Generic.KeyValuePair`2[[Spine.Skin+SkinEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[Spine.Attachment, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.UI.Selectable, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="Microsoft.Win32.SafeHandles.SafeWaitHandle" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection+Enumerator[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection+Enumerator[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Character, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1+Enumerator[[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+KeyCollection+Enumerator[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.TextCore.FontAsset, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.TextCore.SpriteCharacter, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.TextCore.SpriteGlyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.TextCore.TextSpriteAsset, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Reflection.ExceptionHandlingClause" preserve="all" />
+    <type fullname="System.Reflection.LocalVariableInfo" preserve="all" />
+    <type fullname="System.Security.AccessControl.AccessRule" preserve="all" />
+    <type fullname="System.Security.AccessControl.AuditRule" preserve="all" />
+    <type fullname="System.Security.AccessControl.AuthorizationRuleCollection" preserve="all" />
+    <type fullname="System.Security.Principal.IdentityReference" preserve="all" />
+    <type fullname="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.AggregateException" preserve="all" />
+    <type fullname="System.Threading.Tasks.TaskStatus" preserve="all" />
+    <type fullname="System.Threading.Tasks.TaskCreationOptions" preserve="all" />
+    <type fullname="System.Threading.Tasks.TaskFactory" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.TaskAwaiter" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ConfiguredTaskAwaitable" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.YieldAwaitable" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Threading.Tasks.Task`1[[System.Threading.Tasks.Task, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Threading.Tasks.TaskFactory`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.TaskAwaiter`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ValueTaskAwaiter`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.Remoting.IChannelInfo" preserve="all" />
+    <type fullname="System.Runtime.Remoting.IEnvoyInfo" preserve="all" />
+    <type fullname="System.Runtime.Remoting.IRemotingTypeInfo" preserve="all" />
+    <type fullname="System.Globalization.CultureTypes" preserve="all" />
+    <type fullname="System.Globalization.Calendar" preserve="all" />
+    <type fullname="System.Globalization.Calendar[]" preserve="all" />
+    <type fullname="System.Globalization.TextInfo" preserve="all" />
+    <type fullname="System.Globalization.CultureInfo[]" preserve="all" />
+    <type fullname="System.Globalization.CompareInfo" preserve="all" />
+    <type fullname="System.Globalization.NumberFormatInfo" preserve="all" />
+    <type fullname="System.Globalization.DateTimeFormatInfo" preserve="all" />
+    <type fullname="System.Collections.Hashtable" preserve="all" />
+    <type fullname="System.Collections.ArrayList" preserve="all" />
+    <type fullname="System.Reflection.TypeInfo" preserve="all" />
+    <type fullname="System.Reflection.CustomAttributeTypedArgument" preserve="all" />
+    <type fullname="System.Reflection.CustomAttributeNamedArgument" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[Spine.Skin+SkinEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[Spine.Attachment, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2[[Spine.Skin+SkinEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[Spine.Attachment, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[UnityEngine.TextCore.KerningPair, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" preserve="all" />
+    <type fullname="System.Reflection.ExceptionHandlingClauseOptions" preserve="all" />
+    <type fullname="System.Security.AccessControl.AccessControlType" preserve="all" />
+    <type fullname="System.Security.AccessControl.InheritanceFlags" preserve="all" />
+    <type fullname="System.Security.AccessControl.PropagationFlags" preserve="all" />
+    <type fullname="System.Security.AccessControl.AuditFlags" preserve="all" />
+    <type fullname="System.Security.AccessControl.AuthorizationRule" preserve="all" />
+    <type fullname="System.Exception" preserve="all" />
+    <type fullname="System.Collections.ObjectModel.ReadOnlyCollection`1[[System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Threading.CancellationToken" preserve="all" />
+    <type fullname="System.Threading.Tasks.TaskScheduler" preserve="all" />
+    <type fullname="System.Threading.Tasks.TaskContinuationOptions" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ConfiguredTaskAwaitable+ConfiguredTaskAwaiter" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.YieldAwaitable+YieldAwaiter" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="TResult[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="TResult[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Threading.Tasks.TaskFactory`1[[System.Threading.Tasks.Task, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.TaskAwaiter`1[[System.Threading.Tasks.Task, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1[[System.Threading.Tasks.Task, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1+ConfiguredValueTaskAwaiter[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Runtime.Remoting.Messaging.IMessageSink" preserve="all" />
+    <type fullname="System.Globalization.CalendarAlgorithmType" preserve="all" />
+    <type fullname="System.Globalization.Calendar&amp;" preserve="all" />
+    <type fullname="System.Globalization.CultureInfo&amp;" preserve="all" />
+    <type fullname="System.Globalization.SortKey" preserve="all" />
+    <type fullname="System.Globalization.SortVersion" preserve="all" />
+    <type fullname="System.Globalization.DigitShapes" preserve="all" />
+    <type fullname="System.Globalization.CalendarWeekRule" preserve="all" />
+    <type fullname="System.Collections.IList" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.MethodInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.ConstructorInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.EventInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.FieldInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.MemberInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1[[System.Reflection.PropertyInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Threading.CancellationTokenRegistration" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[[System.Threading.Tasks.Task, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="System.Runtime.Remoting.Messaging.IMessage" preserve="all" />
+    <type fullname="System.Runtime.Remoting.Messaging.IMessageCtrl" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.MethodInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.ConstructorInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.EventInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.FieldInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.MemberInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerator`1[[System.Reflection.PropertyInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AssetBundleCreateRequest" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.AssetBundleRequest" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="T[]" preserve="all" />
+    <type fullname="UnityEngine.AssetBundleRecompressOperation" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="" preserve="all" />
+    <type fullname="UnityEngine.AssetBundleLoadResult" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.IMECompositionMode" preserve="all" />
+    <type fullname="UnityEngine.DeviceOrientation" preserve="all" />
+    <type fullname="UnityEngine.LocationService" preserve="all" />
+    <type fullname="UnityEngine.Compass" preserve="all" />
+    <type fullname="UnityEngine.Gyroscope" preserve="all" />
+    <type fullname="UnityEngine.Touch[]" preserve="all" />
+    <type fullname="UnityEngine.AccelerationEvent[]" preserve="all" />
+    <type fullname="UnityEngine.TouchPhase" preserve="all" />
+    <type fullname="UnityEngine.TouchType" preserve="all" />
+    <type fullname="UnityEngine.LocationServiceStatus" preserve="all" />
+    <type fullname="UnityEngine.LocationInfo" preserve="all" />
+    <type fullname="UnityEngine.Touch&amp;" preserve="all" />
+    <type fullname="UnityEngine.AccelerationEvent&amp;" preserve="all" />
+  </assembly>
+  <assembly fullname="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <type fullname="System.Uri" preserve="all" />
+    <type fullname="System.UriHostNameType" preserve="all" />
   </assembly>
 </linker>
