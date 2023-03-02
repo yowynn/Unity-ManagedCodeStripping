@@ -1,17 +1,33 @@
-﻿using CSObjectWrapEditor;
+﻿//#define HAS_XLUA
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEditor;
 using UnityEngine;
+#if HAS_XLUA
+using CSObjectWrapEditor;
 using XLua;
 using static CSObjectWrapEditor.Generator;
+#endif
 
 namespace ManagedCodeStripping.Editor
 {
     public static class PoweredXlua
     {
+        public static List<Type> FinalTypes()
+        {
+#if HAS_XLUA
+            Generator.GetGenConfig(XLua.Utils.GetAllTypes());
+            var finalList = LuaCallCSharp.Concat(ReflectionUse).Distinct().ToList();
+            return finalList;
+#else
+            return new List<Type>();
+#endif
+        }
+
+#if HAS_XLUA
         private static LuaEnv luaenv = new LuaEnv();
         private static XLuaTemplates templateRef;
 
@@ -84,13 +100,6 @@ namespace ManagedCodeStripping.Editor
             }
         }
 
-        public static List<Type> FinalTypes()
-        {
-            Generator.GetGenConfig(XLua.Utils.GetAllTypes());
-            var finalList = LuaCallCSharp.Concat(ReflectionUse).Distinct().ToList();
-            return finalList;
-        }
-
         [MenuItem("ManagedCodeStripping/XluaLinkXmlGen", false)]
         public static void XluaDefaultLinker()
         {
@@ -106,5 +115,6 @@ namespace ManagedCodeStripping.Editor
                 GenTask(gen_task);
             }
         }
+#endif
     }
 }

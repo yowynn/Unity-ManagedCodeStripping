@@ -1,21 +1,19 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEditor;
+using UnityEditorInternal;
 using UnityEngine;
 
 namespace ManagedCodeStripping.Editor
 {
+    using static ManagedCodeStrippingConfig;
     public static class CustomLinkXmlGen
     {
-        public static string[] RESOURSE_ROOT_PATH => new string[]
-        {
-            Application.dataPath,
-            @"P:\hongen_sci\client\trunk",
-        };
 
         // 获取所有类型
         private static List<Type> AllTypes(bool exclude_generic_definition = true)
@@ -77,19 +75,6 @@ namespace ManagedCodeStripping.Editor
             var keywordsInScripts_Internal = new HashSet<string>();
             var mapGuidUsed_internal = new Dictionary<string, string>();
             var classIds = new Dictionary<string, string>();
-            var ScriptReferencedScriptExtensions = new HashSet<string>()
-            {
-                ".lua",
-                //".cs",
-            };
-            var ScriptReferencedAssetExtensions = new HashSet<string>()
-            {
-                ".unity",                       // MonoBehaviors
-                ".prefab",                      // MonoBehaviors
-                ".controller",                  // StateMachineBehaviours
-                ".playable",
-                ".asset",
-            };
             void Fill(string path)
             {
                 var ext = Path.GetExtension(path).ToLower();
@@ -179,11 +164,46 @@ namespace ManagedCodeStripping.Editor
             }
         }
 
-        public static List<Type> FinalTypes()
+        public static List<Type> Subclasses(List<Type> all, Type of)
+        {
+            var list = new List<Type>();
+            foreach (Type type in all)
+            {
+                Type baseType = type.BaseType;
+                while (baseType != null)
+                {
+                    if (baseType == of)
+                    {
+                        list.Add(type);
+                        break;
+                    }
+                    baseType = baseType.BaseType;
+                }
+            }
+            return list;
+        }
+
+        public static List<Type> FindTypesOfNames(IEnumerable<Type> from, IEnumerable<string> names)
+        {
+            var finalList = new List<Type>();
+            var typeNameMap = from.GroupBy(t => t.Name).ToDictionary(g => g.Key, g => g.ToArray());
+            var typeNames = new HashSet<string>(typeNameMap.Keys);
+            foreach (string keyword in names)
+            {
+                if (typeNames.Contains(keyword))
+                {
+                    finalList.AddRange(typeNameMap[keyword]);
+                }
+            }
+            return finalList;
+        }
+
+        public static List<Type> FinalTypes(out List<Type> unusedMonos)
         {
             var finalList = new List<Type>();
             var allTypes = AllTypes();
             Debug.Log($"AllTypes.Count: {allTypes.Count}");
+            unusedMonos = Subclasses(allTypes, typeof(MonoBehaviour));
             var referencableTypes = ReferencableTypes();
             Debug.Log($"ReferencableTypes.Count: {referencableTypes.Count}");
 
@@ -208,26 +228,16 @@ namespace ManagedCodeStripping.Editor
                 return ns.StartsWith("UnityEngine") && an != "UnityEngine.UIElementsModule" && an != "UnityEditor";
             };
             // filter script referenced types
-            var typeNameMap = allTypes.Where(typeFilter).GroupBy(t => t.Name).ToDictionary(g => g.Key, g => g.ToArray());
-            var typeNames = new HashSet<string>(typeNameMap.Keys);
-            foreach (string keyword in keywordsInScripts)
-            {
-                if (typeNames.Contains(keyword))
-                {
-                    finalList.AddRange(typeNameMap[keyword]);
-                }
-            }
-            foreach (string keyword in identifiedClassNames)
-            {
-                if (typeNames.Contains(keyword))
-                {
-                    finalList.AddRange(typeNameMap[keyword]);
-                }
-            }
+            var referenced = FindTypesOfNames(allTypes.Where(typeFilter), keywordsInScripts.Concat(identifiedClassNames).Distinct());
+            finalList.AddRange(referenced);
 
             // special case
             //finalList.Add(Type.GetType("UnityEngine.AsyncOperation, UnityEngine.CoreModule"));
             GetMemberReturnTypes(finalList);
+
+            var totalMonos = unusedMonos.Count;
+            unusedMonos = unusedMonos.Except(finalList).ToList();
+            Debug.Log($"unusedMonos.Count: {identifiedClassNames.Count} ({totalMonos})");
 
             // filter replicated
             var xlua = PoweredXlua.FinalTypes();
@@ -235,14 +245,25 @@ namespace ManagedCodeStripping.Editor
             return finalList;
         }
 
+        public static List<Type> FinalTypes()
+        {
+            return FinalTypes(out var _);
+        }
+
         [MenuItem("ManagedCodeStripping/CustomLinkXmlGen", false)]
         public static void LinkXmlGen()
         {
-            var finalList = FinalTypes();
+            var finalList = FinalTypes(out var unusedMonos);
+            {
+                // save unusedMonos
+                var linkXmlGenerator0 = new PoweredBuildPipeline.LinkXmlGenerator();
+                linkXmlGenerator0.AddTypes(finalList);
+                linkXmlGenerator0.Save("Assets/stripping/unused-monos.xml");
+            }
             // save to link.xml
             var linkXmlGenerator = new PoweredBuildPipeline.LinkXmlGenerator();
             linkXmlGenerator.AddTypes(finalList);
-            linkXmlGenerator.Save("Assets/ManagedCodeStripping/link.xml");
+            linkXmlGenerator.Save("Assets/stripping/link.xml");
             Debug.Log("Finish!");
         }
     }

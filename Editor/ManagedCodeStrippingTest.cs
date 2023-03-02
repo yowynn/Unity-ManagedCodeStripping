@@ -1,17 +1,13 @@
-﻿using CSObjectWrapEditor;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
 
 namespace ManagedCodeStripping.Editor
 {
-    public static class Test
+    public static class ManagedCodeStrippingTest
     {
-        [MenuItem("ManagedCodeStripping/Test/LogGuidToPath", false)]
+        //[MenuItem("ManagedCodeStripping/Test/LogGuidToPath", false)]
         public static void LogGuidToPath()
         {
             var guid = "8b22792c3b570444eb18cb78c2af3a74";
@@ -20,7 +16,7 @@ namespace ManagedCodeStripping.Editor
             Debug.Log(Application.dataPath);
         }
 
-        [MenuItem("ManagedCodeStripping/Test/pipelinebuildlinkxml", false)]
+        //[MenuItem("ManagedCodeStripping/Test/pipelinebuildlinkxml", false)]
         public static void pipelinebuildlinkxml()
         {
             var linkXmlGenerator = new PoweredBuildPipeline.LinkXmlGenerator();
@@ -28,7 +24,7 @@ namespace ManagedCodeStripping.Editor
             linkXmlGenerator.Save("Assets/ManagedCodeStripping/link.xml");
         }
 
-        [MenuItem("ManagedCodeStripping/Test/typesdiff", false)]
+        //[MenuItem("ManagedCodeStripping/Test/typesdiff", false)]
         public static void typesdiff()
         {
             var CustomTypes = CustomLinkXmlGen.FinalTypes();
@@ -44,7 +40,7 @@ namespace ManagedCodeStripping.Editor
             Debug.Log("OK");
         }
 
-        [MenuItem("ManagedCodeStripping/Test/aaa", false)]
+        //[MenuItem("ManagedCodeStripping/Test/aaa", false)]
         public static void aaa()
         {
                 //Generator.GetGenConfig(XLua.Utils.GetAllTypes());
