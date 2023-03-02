@@ -253,17 +253,19 @@ namespace ManagedCodeStripping.Editor
         [MenuItem("ManagedCodeStripping/CustomLinkXmlGen", false)]
         public static void LinkXmlGen()
         {
+            var Dir = "Assets/stripping/";
+            Directory.CreateDirectory(Dir);
             var finalList = FinalTypes(out var unusedMonos);
             {
                 // save unusedMonos
                 var linkXmlGenerator0 = new PoweredBuildPipeline.LinkXmlGenerator();
-                linkXmlGenerator0.AddTypes(finalList);
-                linkXmlGenerator0.Save("Assets/stripping/unused-monos.xml");
+                linkXmlGenerator0.AddTypes(unusedMonos);
+                linkXmlGenerator0.Save(Dir + "unused-monos.xml");
             }
             // save to link.xml
             var linkXmlGenerator = new PoweredBuildPipeline.LinkXmlGenerator();
             linkXmlGenerator.AddTypes(finalList);
-            linkXmlGenerator.Save("Assets/stripping/link.xml");
+            linkXmlGenerator.Save(Dir + "link.xml");
             Debug.Log("Finish!");
         }
     }
