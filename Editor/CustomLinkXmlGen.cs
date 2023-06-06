@@ -1,17 +1,17 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Xml;
 using UnityEditor;
-using UnityEditorInternal;
 using UnityEngine;
 
 namespace ManagedCodeStripping.Editor
 {
     using static ManagedCodeStrippingConfig;
+
     public static class CustomLinkXmlGen
     {
 
@@ -25,11 +25,11 @@ namespace ManagedCodeStripping.Editor
                 try
                 {
 #if (UNITY_EDITOR || XLUA_GENERAL) && !NET_STANDARD_2_0
-                    if (!(assemblies[i].ManifestModule is System.Reflection.Emit.ModuleBuilder))
+                    if (assemblies[i].ManifestModule is not System.Reflection.Emit.ModuleBuilder)
                     {
 #endif
                         allTypes.AddRange(assemblies[i].GetTypes()
-                        .Where(type => exclude_generic_definition ? !type.IsGenericTypeDefinition : true)
+                        .Where(type => !exclude_generic_definition || !type.IsGenericTypeDefinition)
                         );
 #if (UNITY_EDITOR || XLUA_GENERAL) && !NET_STANDARD_2_0
                     }
@@ -83,7 +83,7 @@ namespace ManagedCodeStripping.Editor
                     // 获取文本中可能引用脚本的标识符
                     var content = File.ReadAllText(path);
                     var matches = Regex.Matches(content, @"\b[a-zA-Z_][a-zA-Z0-9_]*\b");
-                    foreach (Match match in matches)
+                    foreach (Match match in matches.Cast<Match>())
                     {
                         keywordsInScripts_Internal.Add(match.Value);
                     }
@@ -93,13 +93,13 @@ namespace ManagedCodeStripping.Editor
                     // 获取美术资源引用的脚本
                     var content = File.ReadAllText(path);
                     var matches = Regex.Matches(content, @"m_Script:\s*{fileID:\s*\d+,\s*guid:\s*(?<guid>\w+),\s*type:\s*\d+}");
-                    foreach (Match match in matches)
+                    foreach (Match match in matches.Cast<Match>())
                     {
                         var guid = match.Groups["guid"].Value;
                         mapGuidUsed_internal[guid] = path;
                     }
                     var matchesU = Regex.Matches(content, @"!u!(?<classId>\d+)\s*&");
-                    foreach (Match match in matchesU)
+                    foreach (Match match in matchesU.Cast<Match>())
                     { 
                         var classId = match.Groups["classId"].Value;
                         classIds[classId] = path;
@@ -198,6 +198,31 @@ namespace ManagedCodeStripping.Editor
             return finalList;
         }
 
+        public static List<Type> FindTypesInLinkXML(IEnumerable<Type> from, XmlDocument xml)
+        {
+            // AssemblyName -> TypeName -> Type
+            var fromMap = from.GroupBy(t => t.Assembly.FullName).ToDictionary(g => g.Key, g => g.GroupBy(t => t.FullName).ToDictionary(g2 => g2.Key, g2 => g2.ToArray()));
+            var finalList = new List<Type>();
+            var linkXmlAssemblies = xml.SelectNodes("/linker/assembly");
+            foreach (XmlNode assemblyNode in linkXmlAssemblies)
+            {
+                var assemblyName = assemblyNode.Attributes["fullname"].Value;
+                if (fromMap.TryGetValue(assemblyName, out var assemblyMap))
+                {
+                    var linkXmlTypes = assemblyNode.SelectNodes("type");
+                    foreach (XmlNode typeNode in linkXmlTypes)
+                    {
+                        var typeName = typeNode.Attributes["fullname"].Value;
+                        if (assemblyMap.TryGetValue(typeName, out var types))
+                        {
+                            finalList.AddRange(types);
+                        }
+                    }
+                }
+            }
+            return finalList;
+        }
+
         public static List<Type> FinalTypes(out List<Type> unusedMonos)
         {
             var finalList = new List<Type>();
@@ -221,19 +246,36 @@ namespace ManagedCodeStripping.Editor
                     //allTypes.Remove(type);
                 }
             }
-            Func<Type, bool> typeFilter = (Type t) =>
+            static bool typeFilter(Type t)
             {
                 var ns = t.Namespace ?? "";
                 var an = t.Assembly.GetName().Name ?? "";
                 return ns.StartsWith("UnityEngine") && an != "UnityEngine.UIElementsModule" && an != "UnityEditor";
-            };
+            }
             // filter script referenced types
             var referenced = FindTypesOfNames(allTypes.Where(typeFilter), keywordsInScripts.Concat(identifiedClassNames).Distinct());
             finalList.AddRange(referenced);
 
             // special case
             //finalList.Add(Type.GetType("UnityEngine.AsyncOperation, UnityEngine.CoreModule"));
-            GetMemberReturnTypes(finalList);
+            if (RECURSIVE_ADD_RETURN_TYPE)
+            {
+                GetMemberReturnTypes(finalList);
+            }
+
+            // incremental export
+            if (INCREMENTAL_EXPORT)
+            {
+                if (File.Exists(OUTPUT_PATH + "link.xml"))
+                {
+                    // read types from link.xml
+                    var linkXml = new XmlDocument();
+                    linkXml.Load(OUTPUT_PATH + "link.xml");
+                    var originList = FindTypesInLinkXML(allTypes, linkXml);
+                    finalList = originList.Concat(finalList).Distinct().ToList();
+                    Debug.Log($"originList.Count: {originList.Count}, After Merge: {finalList.Count}");
+                }
+            }
 
             var totalMonos = unusedMonos.Count;
             unusedMonos = unusedMonos.Except(finalList).ToList();
@@ -250,23 +292,56 @@ namespace ManagedCodeStripping.Editor
             return FinalTypes(out var _);
         }
 
-        [MenuItem("ManagedCodeStripping/CustomLinkXmlGen", false)]
+        [MenuItem("AMS/ManagedCodeStripping/Custom Gen \"link.xml\"", false)]
         public static void LinkXmlGen()
         {
-            var Dir = "Assets/stripping/";
-            Directory.CreateDirectory(Dir);
+            Directory.CreateDirectory(OUTPUT_PATH);
             var finalList = FinalTypes(out var unusedMonos);
+            if (EXPORT_UNUSED_MONOS)
             {
                 // save unusedMonos
                 var linkXmlGenerator0 = new PoweredBuildPipeline.LinkXmlGenerator();
                 linkXmlGenerator0.AddTypes(unusedMonos);
-                linkXmlGenerator0.Save(Dir + "unused-monos.xml");
+                linkXmlGenerator0.Save(OUTPUT_PATH + "unused-monos.xml");
             }
             // save to link.xml
             var linkXmlGenerator = new PoweredBuildPipeline.LinkXmlGenerator();
             linkXmlGenerator.AddTypes(finalList);
-            linkXmlGenerator.Save(Dir + "link.xml");
+            linkXmlGenerator.Save(OUTPUT_PATH + "link.xml");
             Debug.Log("Finish!");
+        }
+
+        class ExtraPathsWindow : EditorWindow
+        {
+            public string extraPaths = "";
+
+            void OnGUI()
+            {
+                extraPaths = EditorGUILayout.TextArea(extraPaths, GUILayout.Height(150));
+                GUILayout.Label("every line is a path, like: Assets/xxx/xxx");
+                if (GUILayout.Button("Set"))
+                {
+                    var extraPathList = extraPaths.Split('\n').Where(s => !string.IsNullOrWhiteSpace(s));
+                    RESOURSE_ROOT_PATH.RemoveRange(1, RESOURSE_ROOT_PATH.Count - 1);
+                    RESOURSE_ROOT_PATH.AddRange(extraPathList);
+                    Close();
+                    for (int i = 0; i < RESOURSE_ROOT_PATH.Count; i++)
+                    {
+                        Debug.Log($"RESOURSE_ROOT_PATH[{i}]: {RESOURSE_ROOT_PATH[i]}");
+                    }
+                }
+            }
+        }   
+
+        [MenuItem("AMS/ManagedCodeStripping/Set ExtraPaths to Scanning", false)]
+        public static void SetExtraPathsToScanning()
+        {
+            var window = EditorWindow.GetWindow<ExtraPathsWindow>();
+            window.titleContent = new GUIContent("ExtraPaths");
+            window.minSize = new Vector2(400, 200);
+            window.maxSize = new Vector2(400, 200);
+            window.extraPaths = string.Join("\n", RESOURSE_ROOT_PATH.Skip(1)) + "\n";
+            window.Show();
         }
     }
 }
