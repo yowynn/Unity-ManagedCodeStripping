@@ -25,7 +25,7 @@ namespace ManagedCodeStripping.Editor
                 try
                 {
 #if (UNITY_EDITOR || XLUA_GENERAL) && !NET_STANDARD_2_0
-                    if (assemblies[i].ManifestModule is not System.Reflection.Emit.ModuleBuilder)
+                    if (!(assemblies[i].ManifestModule is System.Reflection.Emit.ModuleBuilder))
                     {
 #endif
                         allTypes.AddRange(assemblies[i].GetTypes()
@@ -100,7 +100,7 @@ namespace ManagedCodeStripping.Editor
                     }
                     var matchesU = Regex.Matches(content, @"!u!(?<classId>\d+)\s*&");
                     foreach (Match match in matchesU.Cast<Match>())
-                    { 
+                    {
                         var classId = match.Groups["classId"].Value;
                         classIds[classId] = path;
                     }
@@ -246,7 +246,7 @@ namespace ManagedCodeStripping.Editor
                     //allTypes.Remove(type);
                 }
             }
-            static bool typeFilter(Type t)
+            bool typeFilter(Type t)
             {
                 var ns = t.Namespace ?? "";
                 var an = t.Assembly.GetName().Name ?? "";
@@ -279,7 +279,7 @@ namespace ManagedCodeStripping.Editor
 
             var totalMonos = unusedMonos.Count;
             unusedMonos = unusedMonos.Except(finalList).ToList();
-            Debug.Log($"unusedMonos.Count: {identifiedClassNames.Count} ({totalMonos})");
+            Debug.Log($"unusedMonos.Count: {unusedMonos.Count} ({totalMonos})");
 
             // filter replicated
             var xlua = PoweredXlua.FinalTypes();
@@ -331,7 +331,7 @@ namespace ManagedCodeStripping.Editor
                     }
                 }
             }
-        }   
+        }
 
         [MenuItem("AMS/ManagedCodeStripping/Set ExtraPaths to Scanning", false)]
         public static void SetExtraPathsToScanning()
