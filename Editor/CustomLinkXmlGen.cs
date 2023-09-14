@@ -70,11 +70,11 @@ namespace ManagedCodeStripping.Editor
             }
         }
 
-        public static void MixFileScanning(out HashSet<string> keywordsInScripts, out List<string> mapGuidUsed, out HashSet<string> identifiedClassNames)
+        public static void MixFileScanning(out Dictionary<string, int> keywordsInScripts, out List<string> mapGuidUsed, out HashSet<string> identifiedClassNames)
         {
-            var keywordsInScripts_Internal = new HashSet<string>();
-            var mapGuidUsed_internal = new Dictionary<string, string>();
-            var classIds = new Dictionary<string, string>();
+            var keywordsInScripts_Internal = new Dictionary<string, int>();
+            var mapGuidUsed_internal = new Dictionary<string, int>();
+            var classIds = new Dictionary<string, int>();
             void Fill(string path)
             {
                 var ext = Path.GetExtension(path).ToLower();
@@ -85,7 +85,11 @@ namespace ManagedCodeStripping.Editor
                     var matches = Regex.Matches(content, @"\b[a-zA-Z_][a-zA-Z0-9_]*\b");
                     foreach (Match match in matches.Cast<Match>())
                     {
-                        keywordsInScripts_Internal.Add(match.Value);
+                        var keyword = match.Value;
+                        if (keywordsInScripts_Internal.TryGetValue(keyword, out var count))
+                            keywordsInScripts_Internal[keyword] = count + 1;
+                        else
+                            keywordsInScripts_Internal[keyword] = 1;
                     }
                 }
                 else if (ScriptReferencedAssetExtensions.Contains(ext))
@@ -96,13 +100,20 @@ namespace ManagedCodeStripping.Editor
                     foreach (Match match in matches.Cast<Match>())
                     {
                         var guid = match.Groups["guid"].Value;
-                        mapGuidUsed_internal[guid] = path;
+                        if (mapGuidUsed_internal.TryGetValue(guid, out var count))
+                            mapGuidUsed_internal[guid] = count + 1;
+                        else
+                            mapGuidUsed_internal[guid] = 1;
                     }
                     var matchesU = Regex.Matches(content, @"!u!(?<classId>\d+)\s*&");
                     foreach (Match match in matchesU.Cast<Match>())
                     {
                         var classId = match.Groups["classId"].Value;
-                        classIds[classId] = path;
+                        if (classIds.TryGetValue(classId, out var count))
+                            classIds[classId] = count + 1;
+                        else
+                            classIds[classId] = 1;
+
                     }
                 }
             }
@@ -252,8 +263,12 @@ namespace ManagedCodeStripping.Editor
                 var an = t.Assembly.GetName().Name ?? "";
                 return ns.StartsWith("UnityEngine") && an != "UnityEngine.UIElementsModule" && an != "UnityEditor";
             }
+
+            // 统计出现的次数
+            // Debug_Log_KeywordsCount(allTypes.Where(typeFilter), keywordsInScripts);
+
             // filter script referenced types
-            var referenced = FindTypesOfNames(allTypes.Where(typeFilter), keywordsInScripts.Concat(identifiedClassNames).Distinct());
+            var referenced = FindTypesOfNames(allTypes.Where(typeFilter), keywordsInScripts.Keys.Concat(identifiedClassNames).Distinct());
             finalList.AddRange(referenced);
 
             // special case
@@ -290,6 +305,34 @@ namespace ManagedCodeStripping.Editor
         public static List<Type> FinalTypes()
         {
             return FinalTypes(out var _);
+        }
+
+        public static void Debug_Log_KeywordsCount(List<Type> allTypes, Dictionary<string, int> keywords)
+        {
+            var referenced = FindTypesOfNames(allTypes, keywords.Keys);
+            Dictionary<Type, int> typeCounts = new Dictionary<Type, int>();
+            foreach (var type in referenced)
+            {
+                var name = type.Name;
+                if (keywords.TryGetValue(name, out var count))
+                {
+                    typeCounts[type] = count;
+                }
+                else
+                {
+                    Debug.LogError($"type: {type} not found in keywords");
+                }
+            }
+            // sort
+            var sorted = typeCounts.OrderByDescending(kv => kv.Value).ToList();
+            // write to file
+            var path = OUTPUT_PATH + "keywords-count.txt";
+            File.WriteAllText(path, "");
+            foreach (var kv in sorted)
+            {
+                File.AppendAllText(path, $"{kv.Key.FullName}, {kv.Value}\n");
+            }
+            Debug.Log($"Write to {path}");
         }
 
         [MenuItem("AMS/ManagedCodeStripping/Custom Gen \"link.xml\"", false)]
